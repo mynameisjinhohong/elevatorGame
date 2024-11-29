@@ -9,7 +9,9 @@ public class UIManager : MonoBehaviour
     public GameObject elevatorDown;
     public GameObject[] floorIconPos;
     public GameObject mapCanvas;
-
+    public Image hpBG;
+    public Sprite[] hpBGSprite;
+    public int[] hpInts;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +23,18 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         clockUI.fillAmount = 1 - GameManager.instance.time / GameManager.instance.maxTime;
+        if(GameManager.instance.hp < hpInts[0])
+        {
+            hpBG.sprite = hpBGSprite[1];
+        }
+        else if(GameManager.instance.hp < hpInts[1])
+        {
+            hpBG.sprite = hpBGSprite[2];
+        }
+        else
+        {
+            hpBG.sprite = hpBGSprite[0];
+        }
         hpText.text = GameManager.instance.hp.ToString() + "%";
     }
 

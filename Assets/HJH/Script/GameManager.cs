@@ -104,6 +104,7 @@ public class GameManager : SerializedMonoBehaviour
                 nowFloorCharacter.Enqueue(nowStage[floor].characterList.Dequeue());
             }
         }
+        gameState = GameState.OutCharacter;
         uiManager.TurnOffElevatorButton();
         elevator.OpenElevator();
 
@@ -133,7 +134,8 @@ public class GameManager : SerializedMonoBehaviour
     {
         if(nowFloorCharacter.Count > 0)
         {
-            CharacterMgr.CreateCharacterObj(nowFloorCharacter.Dequeue());
+            CharacterObj obj = CharacterMgr.CreateCharacterObj(nowFloorCharacter.Dequeue());
+            obj.transform.parent = characterParent;
         }
         else
         {

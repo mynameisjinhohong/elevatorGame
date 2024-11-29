@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
   m_Name: CharacterData
   m_EditorClassIdentifier: 
-  character: 1
+  character: 0
   spawnTime: 25
   maxPatience: 200
   targetFloor: 4
+  talkText1: 
+  talkText2: 
+  talkText3: 
   pointValue: {x: 0, y: 500}
