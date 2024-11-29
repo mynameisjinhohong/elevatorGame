@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7064860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -427,7 +427,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 101010416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &101010416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1242,8 +1254,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1931270603}
   - {fileID: 994727191}
+  - {fileID: 1931270603}
   - {fileID: 660228377}
   - {fileID: 248445470}
   - {fileID: 1035565346}
@@ -1279,7 +1291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &337479017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1604,7 +1616,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457904822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &457904822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,7 +1821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &535737552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2031,7 +2055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644429408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2216,10 +2240,7 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: nowFloorCharacter
-      Entry: 6
-      Data: 
+    SerializationNodes: []
   uiManager: {fileID: 1847452788}
   stageDatas:
   - {fileID: 11400000, guid: 0c2942c4a5e8c57499098d6816cf8dfe, type: 2}
@@ -2231,7 +2252,7 @@ MonoBehaviour:
   hp: 100
   nowElevatorCharacter: []
   characterParent: {fileID: 724421954}
-  moveTime: 0
+  moveTime: 1
   elevator: {fileID: 1931270604}
   floor: 0
 --- !u!1 &724421953
@@ -2363,7 +2384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &852528224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2577,7 +2598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 943623627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &943623627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,6 +2876,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961689388}
   m_CullTransparentMesh: 1
+--- !u!1 &982131961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982131962}
+  - component: {fileID: 982131964}
+  - component: {fileID: 982131963}
+  m_Layer: 5
+  m_Name: ElevatorDoorRight (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &982131962
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982131961}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1931270603}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 620, y: -78}
+  m_SizeDelta: {x: 415, y: 912}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &982131963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982131961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6270953770400647376, guid: f0a0a70b3ce37094d965e5ddf48dd82f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &982131964
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982131961}
+  m_CullTransparentMesh: 1
 --- !u!1 &994727190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &994727191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2875,10 +2983,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 312396280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 875, y: 875}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &994727192
 MonoBehaviour:
@@ -3075,7 +3183,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1076162877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1076162877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3422,7 +3542,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1282479191}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1282479191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3553,7 +3685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1299235473
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3704,7 +3836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1415110799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4162,7 +4294,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1496398689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1496398689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4282,7 +4426,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505412165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1505412165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4338,7 +4494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1552239909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4840,7 +4996,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753587792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714096029}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveFloor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1753587792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,9 +5257,41 @@ MonoBehaviour:
   - {fileID: -2966200626249415253, guid: 24fa3f91f30f37b49b18b1d4ae4389fd, type: 3}
   hpInts: 3c0000001e000000
   memberText: {fileID: 2127664201}
-  tipText: {fileID: 0}
-  arrow: []
-  lamp: []
+  tipText: {fileID: 1432189285}
+  mapBG: {fileID: 994727192}
+  mapSprite:
+  - {fileID: 2960402581040015946, guid: e35d08f6e8ccd8b43a027054ab9dea58, type: 3}
+  - {fileID: 4164744761163438241, guid: f91316fa02c246f44b929b57a135d07d, type: 3}
+  - {fileID: 7157561037332017152, guid: f5a1e0d6cbe1e074bbb134694ac6ce92, type: 3}
+  - {fileID: -5750353039905602045, guid: 2af62f8484c16bf49a17d07f5bfd7a56, type: 3}
+  - {fileID: -7371509505491802261, guid: b97170c8f0985fb47bc1e1b3c5cdfe06, type: 3}
+  arrow:
+  - {fileID: 535737551}
+  - {fileID: 644429407}
+  - {fileID: 337479016}
+  - {fileID: 7064859}
+  - {fileID: 852528223}
+  - {fileID: 1415110798}
+  - {fileID: 1552239908}
+  - {fileID: 1299235472}
+  lamp:
+  - {fileID: 67789876}
+  - {fileID: 1579663679}
+  - {fileID: 1245741541}
+  - {fileID: 913247037}
+  - {fileID: 2038410455}
+  - {fileID: 1589577504}
+  - {fileID: 574778188}
+  - {fileID: 1296403110}
+  elevatorButton:
+  - {fileID: 1505412164}
+  - {fileID: 457904821}
+  - {fileID: 1753587791}
+  - {fileID: 101010415}
+  - {fileID: 1282479190}
+  - {fileID: 943623626}
+  - {fileID: 1076162876}
+  - {fileID: 1496398688}
 --- !u!1 &1863716784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5274,12 +5474,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 115454186}
+  - {fileID: 982131962}
   - {fileID: 1443868222}
+  - {fileID: 2098911388}
   m_Father: {fileID: 312396280}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 540}
+  m_AnchoredPosition: {x: 0, y: 530}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931270604
@@ -5299,9 +5501,9 @@ MonoBehaviour:
   right: {fileID: 115454186}
   left: {fileID: 1443868222}
   duration: 1
-  endPoint_r: {fileID: 0}
-  endPoint_l: {fileID: 0}
-  ease: 0
+  endPoint_r: {fileID: 982131962}
+  endPoint_l: {fileID: 2098911388}
+  ease: 17
 --- !u!1 &2038410455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,6 +5578,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038410455}
+  m_CullTransparentMesh: 1
+--- !u!1 &2098911387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098911388}
+  - component: {fileID: 2098911390}
+  - component: {fileID: 2098911389}
+  m_Layer: 5
+  m_Name: ElevatorDoorLeft (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2098911388
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098911387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1931270603}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -595, y: -78}
+  m_SizeDelta: {x: 415, y: 912}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2098911389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098911387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8389134475083476877, guid: 7a5da353dc60208428379d1670fd6b1d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2098911390
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098911387}
   m_CullTransparentMesh: 1
 --- !u!1 &2127664200
 GameObject:

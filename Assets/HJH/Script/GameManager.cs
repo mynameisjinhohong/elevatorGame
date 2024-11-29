@@ -19,7 +19,6 @@ public class GameManager : SerializedMonoBehaviour
     #endregion
     public int tip = 0;
     public int hp = 100;
-    public Queue<CharacterData> nowFloorCharacter = new Queue<CharacterData>(); //현재 층에서 타야할 사람들을 넣어놓은 큐
     public List<CharacterObj> nowElevatorCharacter= new List<CharacterObj>();
     public Transform characterParent;
 
@@ -81,34 +80,29 @@ public class GameManager : SerializedMonoBehaviour
     public void StageStart()
     {
         Time.timeScale = 1.0f;
-        nowFloorCharacter = new Queue<CharacterData>();
         hp = 100;
         floor = 0;
         uiManager.LampOn(floor);
+        uiManager.TurnOffElevatorButton();
         nowStage= new List<FloorDataCopy>();
         for(int i = 0; i < stageDatas[stage].floorData.Length; i++)
         {
             nowStage.Add(new FloorDataCopy());
-            for(int j = 0; j < stageDatas[stage].floorData[i].characterList.Length; j++)
+            nowStage[i].characterList = new Queue<CharacterData>();
+            for (int j = 0; j < stageDatas[stage].floorData[i].characterList.Length; j++)
             {
-                nowStage[i].characterList = new Queue<CharacterData>();
                 nowStage[i].characterList.Enqueue(stageDatas[stage].floorData[i].characterList[j]);
             }
         }
+        
         time = 0;
         gameState = GameState.OpenElevator;
     }
 
     public void StartOpenElevator()
     {
-        while (nowStage[floor].characterList.Count > 0)
-        {
-            if (nowStage[floor].characterList.Peek().spawnTime > time)
-            {
-                nowFloorCharacter.Enqueue(nowStage[floor].characterList.Dequeue());
-            }
-        }
         uiManager.TurnOffElevatorButton();
+        uiManager.OffFloorArrowButton(floor);
         elevator.OpenElevator();
 
     }
@@ -118,12 +112,42 @@ public class GameManager : SerializedMonoBehaviour
         gameState = GameState.OutCharacter;
     }
 
+    public void OutCharacter(CharacterObj character)
+    {
+        character.RunCharacterAction(CharacterAction.Show, () => ChatBye(character));
+    }
+
+    public void ChatBye(CharacterObj character)
+    {
+        if (character.GetPatienceTime() > 0)
+        {
+            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=> StartOutCharacter()));
+        }
+        else
+        {
+            character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.Hide, () => StartOutCharacter()));
+        }
+        
+    }
+
     public void StartOutCharacter()
     {
         if(nowElevatorCharacter.Count > 0)
         {
-            CharacterMgr.RemoveCharacterObj(nowElevatorCharacter[nowElevatorCharacter.Count - 1]);
-            nowElevatorCharacter.RemoveAt(nowElevatorCharacter.Count-1);
+            for(int i =0; i< nowElevatorCharacter.Count; i++)
+            {
+                if (nowElevatorCharacter[nowElevatorCharacter.Count - 1].characterData.targetFloor == floor)
+                {
+                    CharacterObj obj = nowElevatorCharacter[i];
+                    nowElevatorCharacter.RemoveAt(i);
+                    OutCharacter(obj);
+                    break;
+                }
+                if(i == nowElevatorCharacter.Count - 1)
+                {
+                    gameState = GameState.ShowCharacter;
+                }
+            }
         }
         else
         {
@@ -131,19 +155,55 @@ public class GameManager : SerializedMonoBehaviour
         }
         
     }
+    private void RunTalkEvent(CharacterObj characterObj, int idx)
+    {
+        characterObj.RunTalkAction(idx, (res) =>
+        {
+            if (res)
+            {
+                RunTalkEvent(characterObj, idx + 1);
+            }
+            else
+            {
+                characterObj.RunCharacterAction(CharacterAction.Hide, () => StartInCharacter());
+            }
+        }
+);
+    }
 
 
     public void StartInCharacter()
     {
-        if(nowFloorCharacter.Count > 0)
+        if (nowStage.Count > floor)
         {
-            CharacterObj obj = CharacterMgr.CreateCharacterObj(nowFloorCharacter.Dequeue());
-            obj.transform.parent = characterParent;
+            if (nowStage[floor].characterList.Count > 0)
+            {
+                if (nowStage[floor].characterList.Peek().spawnTime <= time)
+                {
+                    CharacterObj obj = CharacterMgr.CreateCharacterObj(nowStage[floor].characterList.Dequeue());
+                    obj.transform.parent = characterParent;
+                    obj.GetComponent<RectTransform>().anchoredPosition = new Vector3(100, obj.GetComponent<RectTransform>().anchoredPosition.y, 0);
+                    nowElevatorCharacter.Add(obj);
+                    obj.RunCharacterAction(CharacterAction.Show, () =>
+                    {
+                        RunTalkEvent(obj, 1);
+                    });
+                }
+                else
+                {
+                    gameState = GameState.CloseElevator;
+                }
+            }
+            else
+            {
+                gameState = GameState.CloseElevator;
+            }
         }
         else
         {
             gameState = GameState.CloseElevator;
         }
+
     }
 
     public void StartCloseElevator()
@@ -153,6 +213,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void EndCloseElevator()
     {
+        uiManager.OffFloorArrowButton(floor);
         gameState = GameState.MoveFloor;
     }
 
@@ -163,6 +224,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void MoveFloor(int idx)
     {
+        uiManager.TurnOffElevatorButton();
         StartCoroutine(MoveFloorCo(idx));
     }
     IEnumerator MoveFloorCo(int idx)
@@ -197,7 +259,7 @@ public class GameManager : SerializedMonoBehaviour
         {
             if (nowStage[i].characterList.Count > 0)
             {
-                if (nowStage[i].characterList.Peek().spawnTime > time)
+                if (nowStage[i].characterList.Peek().spawnTime < time)
                 {
                     uiManager.OnFloorArrowButton(i);
                 }

@@ -12,9 +12,13 @@ public class UIManager : MonoBehaviour
     public int[] hpInts;
     public TMP_Text memberText;
     public TMP_Text tipText;
+    public Image mapBG;
+    public Sprite[] mapSprite;
 
     public GameObject[] arrow;
     public GameObject[] lamp;
+
+    public Button[] elevatorButton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,7 +58,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void OffFloorButton(int idx)
+    public void OffFloorArrowButton(int idx)
     {
         if (arrow[idx].activeInHierarchy)
         {
@@ -64,11 +68,22 @@ public class UIManager : MonoBehaviour
 
     public void TurnOnElevatorButton()
     {
+        for (int i = 0; i < elevatorButton.Length; i++)
+        {
+            if(i != GameManager.instance.floor)
+            {
+                elevatorButton[i].interactable = true;
+            }
+        
+        }
 
     }
     public void TurnOffElevatorButton()
     {
-
+        for(int i = 0; i<elevatorButton.Length; i++)
+        {
+            elevatorButton[i].interactable = false;
+        }
     }
 
     public void OpenMap()
@@ -81,6 +96,7 @@ public class UIManager : MonoBehaviour
         mapCanvas.SetActive(false);
     }
 
+
     public void LampOn(int idx)
     {
         for(int i = 0; i<lamp.Length; i++)
@@ -88,6 +104,7 @@ public class UIManager : MonoBehaviour
             if(idx == i)
             {
                 lamp[i].SetActive(true);
+                mapBG.sprite = mapSprite[i];
             }
             else
             {

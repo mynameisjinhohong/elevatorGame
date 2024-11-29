@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: CharacterData
+  m_Name: TestCharacterData
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 0
-  maxPatience: 200
-  targetFloor: 1
-  talkText1: ertertretreter
-  talkText2: rwerertwe
-  talkText3: tertretrterter
-  angryText: "\uD654\uB0AC\uC73C\uC774"
-  thankText: "\uACE0\uB9C8\uC6B0\uC774"
-  pointValue: {x: 0, y: 500}
+  spawnTime: 30
+  maxPatience: 0
+  targetFloor: 0
+  talkText1: haha
+  talkText2: hoho
+  talkText3: hihi
+  pointValue: {x: 0, y: 0}
