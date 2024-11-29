@@ -4,6 +4,12 @@ using Sirenix.OdinInspector;
 
 public class CharacterObj : MonoBehaviour
 {
+    private NoParaDel   showFun;
+    private NoParaDel   hideFun;
+    private OneParaDel  talkFun;
+
+    [SerializeField] private Animator characterAni;
+
     public CharacterData characterData
     {
         get;
@@ -42,4 +48,5 @@ public class CharacterObj : MonoBehaviour
         point = -1;
         getTime = pSpawnTime;
     }
+
 }

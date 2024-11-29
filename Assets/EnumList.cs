@@ -5,6 +5,12 @@ public enum Character
 
 }
 
+public enum CharacterAction
+{
+    Show = 0,
+    Hide = 1,
+}
+
 public enum GameState
 {
     OpenElevator,
