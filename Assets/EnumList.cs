@@ -5,7 +5,7 @@ public enum Character
 
 }
 
-public enum GameStage
+public enum GameState
 {
     OpenElevator,
     ShowCharacter,
