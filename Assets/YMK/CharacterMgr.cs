@@ -41,7 +41,11 @@ public class CharacterMgr : SerializedMonoBehaviour
         string loadFormat = "Character/{0}";
         KeyValuePair<Character, string>[] kvpArr = new KeyValuePair<Character, string>[]
         {
-            new KeyValuePair<Character, string>(Character.Random,"RandomCharacter")
+            new KeyValuePair<Character, string>(Character.Random,"RandomCharacter"),
+            new KeyValuePair<Character, string>(Character.Otaki,"Otaki"),
+            new KeyValuePair<Character, string>(Character.Stranger,"Stranger"),
+            new KeyValuePair<Character, string>(Character.Thief,"Thief"),
+            new KeyValuePair<Character, string>(Character.Rich,"Rich")
         };
 
         foreach (KeyValuePair<Character, string> pair in kvpArr)
