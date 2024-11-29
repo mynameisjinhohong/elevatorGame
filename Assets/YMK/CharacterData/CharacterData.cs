@@ -10,8 +10,8 @@ public class CharacterData : ScriptableObject
     public float        maxPatience;
     public int          targetFloor;
 
-    [MinMaxSlider("@DynamicRange.x", "@DynamicRange.y * 10f", true)]
+    [MinMaxSlider("@dynamicRange.x", "@dynamicRange.y * 10f", true)]
     public Vector2Int   pointValue;
-    private Vector2Int  DynamicRange = new Vector2Int(0, 50);
+    private Vector2Int  dynamicRange = new Vector2Int(0, 50);
 
 }
