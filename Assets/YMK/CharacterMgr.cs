@@ -68,7 +68,7 @@ public class CharacterMgr : SerializedMonoBehaviour
         if (queue.Count > 0)
             obj = Instance.poolDictionary[key].Dequeue();
         else
-            obj = Instantiate(Instance.characterObj[key], Instance.transform);
+            obj = Instantiate(Instance.characterObj[key]);
         obj.Init(pSpawnTime);
 
         obj.gameObject.SetActive(true);
