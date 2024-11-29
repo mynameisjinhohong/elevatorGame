@@ -8,11 +8,11 @@ public class ElevatorController : MonoBehaviour
 {
     public Vector3 origionPos_R;
     public Vector3 originPos_L;
-    public Transform right;
-    public Transform left;
+    public RectTransform right;
+    public RectTransform left;
     public float duration = 1f;
-    public Transform endPoint_r;
-    public Transform endPoint_l; 
+    public RectTransform endPoint_r;
+    public RectTransform endPoint_l; 
 
     public Ease ease;
 
