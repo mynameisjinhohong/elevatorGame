@@ -1,22 +1,43 @@
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
+using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 public class ElevatorController : MonoBehaviour
 {
-    public GameObject right;
-    public GameObject left;
-    public float speed;
-    public float endPoint;
-    public void OpenElevator()
-    {
-        //¿¤¸®º£ÀÌÅÍ ¿­¸®´Â°Å ¾Ö´Ï¸ÞÀÌ¼Ç ±¸Çö
-        //¿¤¸®º£ÀÌÅÍ ´Ù ¿­¸®°í ³ª¼­ GameManager.instance.EndOpenElevator() È£Ãâ.
+    public Vector3 origionPos_R;
+    public Vector3 originPos_L;
+    public Transform right;
+    public Transform left;
+    public float duration = 1f;
+    public Transform endPoint_r;
+    public Transform endPoint_l; 
+
+    public Ease ease;
+
+    void Awake(){
+        origionPos_R = right.localPosition;
+        originPos_L = left.localPosition;
     }
 
+    [Button]
+    public void OpenElevator()
+    {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â°ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ GameManager.instance.EndOpenElevator() È£ï¿½ï¿½.
+        left.DOLocalMove(endPoint_l.localPosition,duration,false).SetEase(ease);
+        right.DOLocalMove(endPoint_r.localPosition,duration,false).SetEase(ease).OnComplete(()=>{GameManager.instance.EndOpenElevator();});
+    }
+    
+    [Button]
     public void CloseElevator()
     {
-        //¿¤¸®º£ÀÌÅÍ ´ÝÈ÷´Â°Å ¾Ö´Ï¸ÞÀÌ¼Ç ±¸Çö
-        //¿¤¸®º£ÀÌÅÍ ´ÝÈ÷°í ³ª¼­ GameManager.instance.EndCloseElevator() È£Ãâ
+        left.DOLocalMove(originPos_L,duration,false).SetEase(ease);
+        right.DOLocalMove(origionPos_R,duration,false).SetEase(ease).OnComplete(()=>{GameManager.instance.EndCloseElevator();});
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â°ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ GameManager.instance.EndCloseElevator() È£ï¿½ï¿½
+        
     }
 
 }

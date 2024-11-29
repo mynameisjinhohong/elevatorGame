@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "elevatorGame.sln"
+    "dotnet.defaultSolution": "elevatorGame.sln",
+    "FSharp.suggestGitignore": false
 }
