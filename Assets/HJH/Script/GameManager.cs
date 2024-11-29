@@ -5,6 +5,7 @@ using Sirenix.OdinInspector;
 public class GameManager : SerializedMonoBehaviour
 {
     public static GameManager instance;
+    public UIManager UIManager;
     public StageData[] stageDatas;
     public int stage = 0;
     public float time = 0;

@@ -4,3 +4,12 @@ public enum Character
     Sugi  = 1,
 
 }
+
+public enum GameStage
+{
+    OpenElevator,
+    ShowCharacter,
+    Conversation,
+    CloseElevator,
+    MoveFloor
+}
