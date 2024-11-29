@@ -6,12 +6,15 @@ public class UIManager : MonoBehaviour
 {
     public Image clockUI;
     public TMP_Text hpText;
-    public GameObject elevatorDown;
-    public GameObject[] floorIconPos;
     public GameObject mapCanvas;
     public Image hpBG;
     public Sprite[] hpBGSprite;
     public int[] hpInts;
+    public TMP_Text memberText;
+    public TMP_Text tipText;
+
+    public GameObject[] arrow;
+    public GameObject[] lamp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,22 +39,26 @@ public class UIManager : MonoBehaviour
             hpBG.sprite = hpBGSprite[0];
         }
         hpText.text = GameManager.instance.hp.ToString() + "%";
+        memberText.text = GameManager.instance.nowElevatorCharacter.Count + "/4";
+        tipText.text = GameManager.instance.tip.ToString() + "$";
     }
 
+    
 
-    public void OnFloorButton(int idx)
+
+    public void OnFloorArrowButton(int idx)
     {
-        if (!floorIconPos[idx].transform.GetChild(idx).gameObject.activeInHierarchy)
+        if (!arrow[idx].activeInHierarchy)
         {
-            floorIconPos[idx].transform.GetChild(idx).gameObject.SetActive(true);
+            arrow[idx].SetActive(true);
         }
     }
 
     public void OffFloorButton(int idx)
     {
-        if (floorIconPos[idx].transform.GetChild(idx).gameObject.activeInHierarchy)
+        if (arrow[idx].activeInHierarchy)
         {
-            floorIconPos[idx].transform.GetChild(idx).gameObject.SetActive(false);
+            arrow[idx].SetActive(false);
         }
     }
 
@@ -72,5 +79,20 @@ public class UIManager : MonoBehaviour
     public void CloseMap()
     {
         mapCanvas.SetActive(false);
+    }
+
+    public void LampOn(int idx)
+    {
+        for(int i = 0; i<lamp.Length; i++)
+        {
+            if(idx == i)
+            {
+                lamp[i].SetActive(true);
+            }
+            else
+            {
+                lamp[i].SetActive(false);
+            }
+        }
     }
 }

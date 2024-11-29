@@ -17,11 +17,14 @@ public class GameManager : SerializedMonoBehaviour
     public float time = 0;
     public float maxTime = 300;
     #endregion
+    public int tip = 0;
     public int hp = 100;
     public Queue<CharacterData> nowFloorCharacter = new Queue<CharacterData>(); //현재 층에서 타야할 사람들을 넣어놓은 큐
     public List<CharacterObj> nowElevatorCharacter= new List<CharacterObj>();
     public Transform characterParent;
-    
+
+    public float moveTime;
+
     public ElevatorController elevator;
 
 
@@ -81,6 +84,7 @@ public class GameManager : SerializedMonoBehaviour
         nowFloorCharacter = new Queue<CharacterData>();
         hp = 100;
         floor = 0;
+        uiManager.LampOn(floor);
         nowStage= new List<FloorDataCopy>();
         for(int i = 0; i < stageDatas[stage].floorData.Length; i++)
         {
@@ -104,7 +108,6 @@ public class GameManager : SerializedMonoBehaviour
                 nowFloorCharacter.Enqueue(nowStage[floor].characterList.Dequeue());
             }
         }
-        gameState = GameState.OutCharacter;
         uiManager.TurnOffElevatorButton();
         elevator.OpenElevator();
 
@@ -158,6 +161,30 @@ public class GameManager : SerializedMonoBehaviour
         uiManager.TurnOnElevatorButton();
     }
 
+    public void MoveFloor(int idx)
+    {
+        StartCoroutine(MoveFloorCo(idx));
+    }
+    IEnumerator MoveFloorCo(int idx)
+    {
+        while(idx != floor)
+        {
+            if (idx > floor)
+            {
+                yield return new WaitForSeconds(moveTime);
+                floor += 1;
+                uiManager.LampOn(floor);
+            }
+            else
+            {
+                yield return new WaitForSeconds(moveTime);
+                floor -= 1;
+                uiManager.LampOn(floor);
+            }
+        }
+        gameState = GameState.OpenElevator;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -172,7 +199,7 @@ public class GameManager : SerializedMonoBehaviour
             {
                 if (nowStage[i].characterList.Peek().spawnTime > time)
                 {
-                    uiManager.OnFloorButton(i);
+                    uiManager.OnFloorArrowButton(i);
                 }
             }
         }
