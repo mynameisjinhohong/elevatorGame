@@ -52,7 +52,7 @@ public class CharacterMgr : SerializedMonoBehaviour
         }
     }
 
-    public static CharacterObj CreateCharacterObj(CharacterData pCharacterData,float pSpawnTime)
+    public static CharacterObj CreateCharacterObj(CharacterData pCharacterData)
     {
         //캐릭터 생성
         Character key = pCharacterData.character;
@@ -65,7 +65,7 @@ public class CharacterMgr : SerializedMonoBehaviour
             obj = Instance.poolDictionary[key].Dequeue();
         else
             obj = Instantiate(Instance.characterObj[key]);
-        obj.Init(pSpawnTime);
+        obj.Init(GameManager.instance.time);
 
         obj.gameObject.SetActive(true);
         Instance.useList[key].Add(obj);
