@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: FaceData0
   m_EditorClassIdentifier: 
   face: {fileID: 21300000, guid: e3474c4239cedee49a8bff6115682d9c, type: 3}
+  angryFace: {fileID: 21300000, guid: 05f1cb17ca6a5ae4ea362c6f53215f2b, type: 3}

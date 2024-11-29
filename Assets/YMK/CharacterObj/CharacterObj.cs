@@ -115,6 +115,29 @@ public class CharacterObj : MonoBehaviour
         }
 
         talkBox.gameObject.SetActive(true);
-        talkBox.RunText(str, pTalkIdx != 3, pFun);
+        talkBox.RunReAskText(str, pTalkIdx != 3,0, pFun);
+    }
+
+    public void RunAngryTalkAction(NoParaDel pFun)
+    {
+        //캐릭터 화난대화 출력
+        string str = characterData.angryText;
+        SetAngry(true);
+        talkBox.gameObject.SetActive(true);
+        talkBox.RunNormalText(str,1f, pFun);
+    }
+
+    public void RunThankTalkAction(NoParaDel pFun)
+    {
+        //캐릭터 감사대화 출력
+        string str = characterData.thankText;
+        SetAngry(false);
+        talkBox.gameObject.SetActive(true);
+        talkBox.RunNormalText(str, 1f, pFun);
+    }
+
+    protected virtual void SetAngry(bool state)
+    {
+
     }
 }

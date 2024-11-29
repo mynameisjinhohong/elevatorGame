@@ -17,6 +17,10 @@ public class RandomCharacterObj : CharacterObj
     [SerializeField] private Image body;
     [SerializeField] private Image hairFront;
     [SerializeField] private Image hairBack;
+    private FaceData faceData;
+    private HeadData headData;
+    private HairData hairData;
+    private BodyData bodyData;
 
     public override void Init(float pSpawnTime, CharacterData pCharacterData)
     {
@@ -27,20 +31,20 @@ public class RandomCharacterObj : CharacterObj
     private void SetRandom()
     {
         int rIdx = UnityEngine.Random.Range(0, faceDatas.Count);
-        FaceData faceData = faceDatas[rIdx];
+        faceData = faceDatas[rIdx];
         SetSprite(face, faceData.face);
 
         rIdx = UnityEngine.Random.Range(0, headDatas.Count);
-        HeadData headData = headDatas[rIdx];
+        headData = headDatas[rIdx];
         SetSprite(head, headData.head);
 
         rIdx = UnityEngine.Random.Range(0, hairDatas.Count);
-        HairData hairData = hairDatas[rIdx];
+        hairData = hairDatas[rIdx];
         SetSprite(hairFront, hairData.hairFront);
         SetSprite(hairBack, hairData.hairBack);
 
         rIdx = UnityEngine.Random.Range(0, bodyDatas.Count);
-        BodyData bodyData = bodyDatas[rIdx];
+        bodyData = bodyDatas[rIdx];
         SetSprite(body, bodyData.body);
     }
 
@@ -54,6 +58,15 @@ public class RandomCharacterObj : CharacterObj
 
         pImg.enabled = true;
         pImg.sprite = pSprite;
+    }
+
+    protected override void SetAngry(bool state)
+    {
+        //state : 화난 여부
+        if(state) 
+            SetSprite(face, faceData.angryFace);
+        else
+            SetSprite(face, faceData.face);
     }
 
     public Sprite GetHairFront() => hairFront.sprite;

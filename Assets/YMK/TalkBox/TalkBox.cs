@@ -15,17 +15,45 @@ public class TalkBox : MonoBehaviour
     [SerializeField] private Button         reAskBtn;
     private string talkStr;
     private IEnumerator talkEvent;
+    private bool reAskEvent = false;
+    private float waitTime = 0;
+    private bool talkEndFlag = false;
 
-    //
-    private OneParaDel fun;
+    //되묻기 이벤트용
+    private OneParaDel reAskFun;
 
-    public void RunText(string str, bool showReAsk, OneParaDel pFun)
+    //단일 텍스트 이벤트용
+    private NoParaDel normalFun;
+
+    public void RunReAskText(string str, bool showReAsk, float pWaitTime, OneParaDel pFun)
     {
+        talkEndFlag = false;
+        reAskEvent = true;
+        waitTime = pWaitTime;
         reAskUI.gameObject.SetActive(false);
 
         talkStr = str;
         reAskBtn.gameObject.SetActive(showReAsk);
-        fun = pFun;
+        reAskFun = pFun;
+
+        if (talkEvent != null)
+        {
+            StopCoroutine(talkEvent);
+            talkEvent = null;
+        }
+        talkEvent = Run(talkStr);
+        StartCoroutine(talkEvent);
+    }
+
+    public void RunNormalText(string str,float pWaitTime, NoParaDel pFun)
+    {
+        talkEndFlag = false;
+        reAskEvent = false;
+        waitTime = pWaitTime;
+        reAskUI.gameObject.SetActive(false);
+
+        talkStr = str;
+        normalFun = pFun;
 
         if (talkEvent != null)
         {
@@ -51,24 +79,37 @@ public class TalkBox : MonoBehaviour
 
     public void TalkEnd()
     {
+        if (talkEndFlag)
+            return;
+        talkEndFlag = true;
+
         if (talkEvent != null)
         {
             StopCoroutine(talkEvent);
             talkEvent = null;
         }
         talkText.text = talkStr;
-        reAskUI.gameObject.SetActive(true);
+
+        if (reAskEvent)
+            reAskUI.gameObject.SetActive(true);
+        else
+            Invoke("NormalEventRun", waitTime);
+    }
+
+    private void NormalEventRun()
+    {
+        normalFun?.Invoke();
     }
 
     public void YesBtn()
     {
         //되묻기
-        fun?.Invoke(true);
+        reAskFun?.Invoke(true);
     }
 
     public void NoBtn()
     {
         //되묻지 않음
-        fun?.Invoke(false);
+        reAskFun?.Invoke(false);
     }
 }

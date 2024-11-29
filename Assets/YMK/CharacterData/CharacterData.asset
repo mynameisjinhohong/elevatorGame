@@ -16,7 +16,7 @@ MonoBehaviour:
   spawnTime: 25
   maxPatience: 200
   targetFloor: 4
-  talkText1: 123
-  talkText2: 456
-  talkText3: 789
+  talkText1: ertertretreter
+  talkText2: rwerertwe
+  talkText3: tertretrterter
   pointValue: {x: 0, y: 500}

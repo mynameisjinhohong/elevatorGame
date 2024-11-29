@@ -14,6 +14,9 @@ public class CharacterData : ScriptableObject
     public string       talkText2;
     public string       talkText3;
 
+    public string       angryText;
+    public string       thankText;
+
     [MinMaxSlider("@dynamicRange.x", "@dynamicRange.y * 10f", true)]
     public Vector2Int   pointValue;
     private Vector2Int  dynamicRange = new Vector2Int(0, 50);

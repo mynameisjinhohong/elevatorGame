@@ -4,4 +4,5 @@ using UnityEngine;
 public class FaceData : ScriptableObject
 {
     public Sprite face;
+    public Sprite angryFace;
 }
