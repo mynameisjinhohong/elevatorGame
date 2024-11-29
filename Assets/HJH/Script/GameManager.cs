@@ -265,6 +265,15 @@ public class GameManager : SerializedMonoBehaviour
                 }
             }
         }
+        for(int i =0; i<nowElevatorCharacter.Count; i++)
+        {
+            if (nowElevatorCharacter[i].GetPatienceTime() <= 0 && !nowElevatorCharacter[i].AngryCheck)
+            {
+                hp -= nowElevatorCharacter[i].GetPoint();
+                nowElevatorCharacter[i].AngryCheck = true;
+                //need to put character Icon angry effect
+            }
+        }
     }
 
     public void StageOver()

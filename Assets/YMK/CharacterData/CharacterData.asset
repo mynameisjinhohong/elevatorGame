@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   spawnTime: 0
-  maxPatience: 200
+  maxPatience: 10
   targetFloor: 1
   talkText1: ertertretreter
   talkText2: rwerertwe

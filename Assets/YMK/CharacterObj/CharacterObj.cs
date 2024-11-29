@@ -10,6 +10,8 @@ public class CharacterObj : MonoBehaviour
     [SerializeField] private TalkBox  talkBox;
     [SerializeField] private Animator characterAni;
 
+    public bool AngryCheck = false;
+
     public CharacterData characterData
     {
         get;
