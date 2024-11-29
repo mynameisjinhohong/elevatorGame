@@ -10,7 +10,7 @@ public class CharacterObj : MonoBehaviour
     [SerializeField] private TalkBox  talkBox;
     [SerializeField] private Animator characterAni;
 
-    public bool AngryCheck = false;
+    public bool angryCheck = false;
 
     public CharacterData characterData
     {
@@ -53,7 +53,7 @@ public class CharacterObj : MonoBehaviour
         showFun = null;
         hideFun = null;
         characterData = pCharacterData;
-
+        angryCheck= false;
         if(talkBox != null)
             talkBox.gameObject.SetActive(false);
     }
