@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94acebf2898cfc04c9461a4be1be6f10, type: 3}
-  m_Name: StageData
+  m_Name: TestStage
   m_EditorClassIdentifier: 
-  floorData: []
+  floorData:
+  - {fileID: 11400000, guid: ab657ed6fcf3f1e47abff86a22b88c4d, type: 2}
