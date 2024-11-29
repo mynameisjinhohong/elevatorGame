@@ -115,6 +115,6 @@ public class CharacterObj : MonoBehaviour
         }
 
         talkBox.gameObject.SetActive(true);
-        talkBox.RunText(str, pFun);
+        talkBox.RunText(str, pTalkIdx != 3, pFun);
     }
 }

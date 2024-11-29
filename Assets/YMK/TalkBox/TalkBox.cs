@@ -11,19 +11,22 @@ public class TalkBox : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI talkText;
     [SerializeField] private float textDelay;
-    [SerializeField] private RectTransform reAskUI;
+    [SerializeField] private RectTransform  reAskUI;
+    [SerializeField] private Button         reAskBtn;
     private string talkStr;
     private IEnumerator talkEvent;
 
     //
     private OneParaDel fun;
 
-    public void RunText(string str, OneParaDel pFun)
+    public void RunText(string str, bool showReAsk, OneParaDel pFun)
     {
         reAskUI.gameObject.SetActive(false);
 
         talkStr = str;
+        reAskBtn.gameObject.SetActive(showReAsk);
         fun = pFun;
+
         if (talkEvent != null)
         {
             StopCoroutine(talkEvent);
