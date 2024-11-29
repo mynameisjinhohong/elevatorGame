@@ -8,6 +8,7 @@ public enum Character
 public enum GameState
 {
     OpenElevator,
+    OutCharacter,
     ShowCharacter,
     Conversation,
     CloseElevator,

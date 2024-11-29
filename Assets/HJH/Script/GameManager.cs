@@ -11,6 +11,29 @@ public class GameManager : SerializedMonoBehaviour
     public float time = 0;
     public float maxTime = 300;
     public StageData nowStage;
+    GameState gs;
+    public GameState gameState
+    {
+        get
+        {
+            return gs;
+        }
+        set
+        {
+            gs = value;
+            switch (gs)
+            {
+                case GameState.OpenElevator:
+
+                    break;
+                case GameState.OutCharacter: break;
+                case GameState.ShowCharacter: break;
+                case GameState.Conversation: break;
+                case GameState.MoveFloor: break;
+            }
+        }
+    } 
+    
     private void Awake()
     {
         if(instance == null)
@@ -34,7 +57,7 @@ public class GameManager : SerializedMonoBehaviour
         Time.timeScale = 1.0f;
         time = 0;
         nowStage = stageDatas[stage];
-
+        gameState = GameState.OpenElevator;
     }
 
     // Update is called once per frame
