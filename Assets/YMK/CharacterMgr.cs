@@ -65,7 +65,9 @@ public class CharacterMgr : SerializedMonoBehaviour
             obj = Instance.poolDictionary[key].Dequeue();
         else
             obj = Instantiate(Instance.characterObj[key]);
-        obj.Init(GameManager.instance.time);
+
+        float nowTime = GameManager.instance ? GameManager.instance.time : 0;
+        obj.Init(nowTime, pCharacterData);
 
         obj.gameObject.SetActive(true);
         Instance.useList[key].Add(obj);

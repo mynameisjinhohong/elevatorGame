@@ -39,16 +39,19 @@ public class CharacterObj : MonoBehaviour
         if (characterData == null)
             return 0;
 
-        float time = GameManager.instance.time - getTime;
+        float nowTime = GameManager.instance ? GameManager.instance.time : 0;
+        float time = nowTime - getTime;
         return Mathf.Max(0,characterData.maxPatience - time);
     }
 
-    public virtual void Init(float pSpawnTime)
+    public virtual void Init(float pSpawnTime, CharacterData pCharacterData)
     {
         point = -1;
         getTime = pSpawnTime;
         showFun = null;
         hideFun = null;
+        characterData = pCharacterData;
+
         if(talkBox != null)
             talkBox.gameObject.SetActive(false);
     }

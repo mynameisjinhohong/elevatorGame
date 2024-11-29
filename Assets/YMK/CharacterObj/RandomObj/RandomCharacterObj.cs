@@ -18,9 +18,9 @@ public class RandomCharacterObj : CharacterObj
     [SerializeField] private Image hairFront;
     [SerializeField] private Image hairBack;
 
-    public override void Init(float pSpawnTime)
+    public override void Init(float pSpawnTime, CharacterData pCharacterData)
     {
-        base.Init(pSpawnTime);
+        base.Init(pSpawnTime, pCharacterData);
         SetRandom();
     }
 

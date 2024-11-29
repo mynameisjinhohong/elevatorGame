@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkText: {fileID: 9178347110671050116}
-  textDelay: 0.5
+  textDelay: 0.2
   reAskUI: {fileID: 4916269485006698450}
 --- !u!114 &2154282506511341963
 MonoBehaviour:
