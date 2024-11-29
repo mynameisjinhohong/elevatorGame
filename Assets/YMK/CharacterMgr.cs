@@ -29,10 +29,6 @@ public class CharacterMgr : SerializedMonoBehaviour
 
     private void Init()
     {
-        if (Instance != null)
-            return;
-        Instance = this;
-
         //캐릭터 오브젝트 로드
         Array enumValues = Enum.GetValues(typeof(Character));
         for (int i = 0; i < enumValues.Length; i++)
