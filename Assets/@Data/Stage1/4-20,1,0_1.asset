@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
+  m_Name: 4-20,1,0_1
+  m_EditorClassIdentifier: 
+  character: 0
+  spawnTime: 20
+  maxPatience: 100
+  targetFloor: 0
+  talkText1: "\uB0B4\uAC00 \uB2E4\uC2DC\uB294 \uC774 \uBBF8\uC6A9\uC2E4 \uC624\uB098\uBD10\uB77C"
+  talkText2: "\uC774 \uAC74\uBB3C\uC5D0 \uC870\uAE08\uC774\uB77C\uB3C4 \uBA38\uBB34\uB974\uAE30
+    \uC2EB\uC73C\uB2C8\uAE4C \uBE68\uB9AC \uAC11\uC2DC\uB2E4"
+  talkText3: "\uB85C\uBE44\uB85C \uAC00\uC790\uACE0\uC694 \uB85C\uBE44!"
+  angryText: "\uC544\uC624 \uC624\uB298 \uC7AC\uC218 \uC634\uBD99\uC5C8\uB124"
+  thankText: "\uC5D0\uD734 \uBCA8\uBCF4\uC774\uB294 \uC4F8\uB9CC\uD55C\uB370, \uC800
+    \uBBF8\uC6A9\uC2E4\uC740 \uC9C4\uC9DC"
+  requireEvent: []
+  pointValue: {x: 100, y: 100}

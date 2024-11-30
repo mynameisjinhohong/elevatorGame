@@ -10,9 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: FloorData3F
+  m_Name: FloorData6F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
-  characterList:
-  - {fileID: 11400000, guid: 2f2ed7ec62754994993cdd3b84f7d81c, type: 2}
-  - {fileID: 11400000, guid: 5c7c12c84b68a954ba10aa916d1f238a, type: 2}
-  - {fileID: 11400000, guid: e42f0721b1cff034faf9224ce0fdd117, type: 2}
+  characterList: []

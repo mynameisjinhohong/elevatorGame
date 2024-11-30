@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 10,2,0
+  m_Name: 2-5,2,0_1
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 0
-  maxPatience: 0
+  spawnTime: 5
+  maxPatience: 100
   targetFloor: 2
   talkText1: "\uC624 \uB9C8\uCE68 \uB531 \uC5D8\uB9AC\uBCA0\uC774\uD130\uAC00 \uC654\uB124"
   talkText2: "\uB85C\uBE44\uB85C \uAC00\uC8FC\uC138\uC694. \uC9C0\uAE08 \uCE5C\uAD6C\uAC00
@@ -24,4 +24,5 @@ MonoBehaviour:
   angryText: "\uC5D0\uD734 \uC774\uB7EC\uB2E4 \uCE5C\uAD6C\uAC00 \uAC08\uBED4 \uD588\uC796\uC544\uC694."
   thankText: "\uC624\uB79C\uB9CC\uC774\uC57C~ \uBB50\uBA39\uC73C\uB7EC \uAC08\uAE4C?
     \uC544 \uC218\uACE0\uD588\uC5B4\uC694 \uC544\uC800\uC528"
-  pointValue: {x: 0, y: 0}
+  requireEvent: []
+  pointValue: {x: 100, y: 100}
