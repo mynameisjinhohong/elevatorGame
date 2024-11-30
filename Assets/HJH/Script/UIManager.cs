@@ -44,7 +44,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clockUI.fillAmount = 1 - GameManager.instance.time / GameManager.instance.maxTime;
+        clockUI.fillAmount = 1-(float)GameManager.instance.stageOutPeopleCount/(float)GameManager.instance.stagePeopleCount;
         if(GameManager.instance.hp < hpInts[0])
         {
             hpBG.sprite = hpBGSprite[1];

@@ -14,6 +14,8 @@ public class GameManager : SerializedMonoBehaviour
     public StageData[] stages;
     public int stage = 0;
     public List<FloorDataCopy> nowStage;
+    public int stagePeopleCount = 0;
+    public int stageOutPeopleCount = 0;
     #endregion
     #region 시간관련
     public float time = 0;
@@ -109,12 +111,15 @@ public class GameManager : SerializedMonoBehaviour
         uiManager.LampOn(floor);
         uiManager.TurnOffElevatorButton();
         nowStage= new List<FloorDataCopy>();
+        stagePeopleCount= 0;
+        stageOutPeopleCount= 0;
         for(int i = 0; i < stages[stage].floorDatas.Length; i++)
         {
             nowStage.Add(new FloorDataCopy());
             nowStage[i].characterList = new Queue<CharacterData>();
             for (int j = 0; j < stages[stage].floorDatas[i].characterList.Length; j++)
             {
+                stagePeopleCount++;
                 nowStage[i].characterList.Enqueue(stages[stage].floorDatas[i].characterList[j]);
             }
         }
@@ -147,6 +152,7 @@ public class GameManager : SerializedMonoBehaviour
     {
         if (character.GetPatienceTime() > 0)
         {
+            stageOutPeopleCount++;
             character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=>
             {
                 CharacterRemove(character);
@@ -158,6 +164,7 @@ public class GameManager : SerializedMonoBehaviour
         }
         else
         {
+            stageOutPeopleCount++;
             character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.Hide, () => CharacterRemove(character)));
         }
         
@@ -328,7 +335,7 @@ public class GameManager : SerializedMonoBehaviour
         if (runGame == false)
             return;
         time += Time.deltaTime;
-        if(time >= maxTime)
+        if(stagePeopleCount <= stageOutPeopleCount)
         {
             StageOver();
         }
