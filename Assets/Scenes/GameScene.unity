@@ -3507,6 +3507,7 @@ MonoBehaviour:
   audioManager: {fileID: 1226829436}
   stages:
   - {fileID: 11400000, guid: 0494730876d368e4c85290a2850debba, type: 2}
+  - {fileID: 11400000, guid: 4cd65d89683428b4cb0bc275bdceb408, type: 2}
   stage: 0
   nowStage: []
   stagePeopleCount: 0
@@ -5321,7 +5322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002677524}
   m_Layer: 5
-  m_Name: Character
+  m_Name: CharacterParentFirst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
