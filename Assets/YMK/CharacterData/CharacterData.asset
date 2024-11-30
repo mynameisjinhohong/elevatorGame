@@ -21,4 +21,4 @@ MonoBehaviour:
   talkText3: tertretrterter
   angryText: "\uD654\uB0AC\uC73C\uC774"
   thankText: "\uACE0\uB9C8\uC6B0\uC774"
-  pointValue: {x: 0, y: 500}
+  pointValue: {x: 500, y: 500}

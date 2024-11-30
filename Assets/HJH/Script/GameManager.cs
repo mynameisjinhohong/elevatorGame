@@ -49,6 +49,8 @@ public class GameManager : SerializedMonoBehaviour
     public int damage;
     GameState gs;
     public int floor = 0;
+    private HashSet<CharacterData> completeEvent = new HashSet<CharacterData>();
+
     public GameState gameState
     {
         get
@@ -215,7 +217,8 @@ public class GameManager : SerializedMonoBehaviour
         {
             if (nowStage[floor].characterList.Count > 0)
             {
-                if (nowStage[floor].characterList.Peek().spawnTime <= time)
+                CharacterData peek = nowStage[floor].characterList.Peek();
+                if (peek.spawnTime <= time && CompleteEvent(peek))
                 {
                     CharacterObj obj = CharacterMgr.CreateCharacterObj(nowStage[floor].characterList.Dequeue());
                     obj.transform.parent = characterParent;
@@ -240,6 +243,17 @@ public class GameManager : SerializedMonoBehaviour
             gameState = GameState.CloseElevator;
         }
 
+    }
+
+    private bool CompleteEvent(CharacterData pCharacterData)
+    {
+        List<CharacterData> requireEvent = pCharacterData.requireEvent;
+        foreach (CharacterData characterData in requireEvent)
+        {
+            if (completeEvent.Contains(characterData) == false)
+                return false;
+        }
+        return true;
     }
 
     public void StartCloseElevator()
@@ -316,7 +330,8 @@ public class GameManager : SerializedMonoBehaviour
         {
             if (nowStage[i].characterList.Count > 0)
             {
-                if (nowStage[i].characterList.Peek().spawnTime < time)
+                CharacterData peek = nowStage[i].characterList.Peek();
+                if (peek.spawnTime <= time && CompleteEvent(peek))
                 {
                     uiManager.OnFloorArrowButton(i);
                     audioManager.StartAudio(SFX.ElevatorCall);
