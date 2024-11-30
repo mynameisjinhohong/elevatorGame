@@ -3507,8 +3507,8 @@ MonoBehaviour:
   uiManager: {fileID: 1847452788}
   audioManager: {fileID: 1226829436}
   stages:
-  - {fileID: 11400000, guid: 0494730876d368e4c85290a2850debba, type: 2}
   - {fileID: 11400000, guid: 4cd65d89683428b4cb0bc275bdceb408, type: 2}
+  - {fileID: 11400000, guid: 0494730876d368e4c85290a2850debba, type: 2}
   stage: 0
   nowStage: []
   stagePeopleCount: 0
