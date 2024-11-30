@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 2
   spawnTime: 240
-  maxPatience: 100
+  maxPatience: 40
   targetFloor: 2
   talkText1: Do you happen to know where the thief lady went?
   talkText2: I heard the thief lady likes jewels.

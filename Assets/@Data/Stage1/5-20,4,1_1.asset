@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   spawnTime: 20
-  maxPatience: 20
+  maxPatience: 50
   targetFloor: 1
   talkText1: "\uC544 \uBC30\uBD80\uB974\uAC8C \uC798\uBA39\uC5C8\uB2E4. \uC774\uC81C
     \uC880 \uB180\uB7EC \uAC00\uBCFC\uAE4C?"
