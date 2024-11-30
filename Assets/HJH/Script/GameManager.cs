@@ -153,7 +153,7 @@ public class GameManager : SerializedMonoBehaviour
         if (character.GetPatienceTime() > 0)
         {
             stageOutPeopleCount++;
-            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=>
+            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.GetOut,()=>
             {
                 CharacterRemove(character);
 
@@ -167,7 +167,7 @@ public class GameManager : SerializedMonoBehaviour
         else
         {
             stageOutPeopleCount++;
-            character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.Hide, () => CharacterRemove(character)));
+            character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.GetOut, () => CharacterRemove(character)));
         }
         
     }

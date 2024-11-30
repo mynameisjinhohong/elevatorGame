@@ -74,7 +74,7 @@ public class CharacterObj : MonoBehaviour
             case CharacterAction.GetOut:
                 {
                     characterAni.Play("GetOut");
-                    hideFun = pFun;
+                    getOutFun = pFun;
                 }
                 break;
         }
