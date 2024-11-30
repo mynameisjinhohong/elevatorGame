@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b310d7d552c084b4f9f9058791d18db4
+guid: b96207185d8556744a56b048f3705885
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
@@ -25,5 +25,5 @@ AssetOrigin:
   productId: 191055
   packageName: Game Voice Fake Language
   packageVersion: 1.0
-  assetPath: Assets/Game Voice Fake Language/004/chara_04_long/chara_04_long_009.wav
+  assetPath: Assets/Game Voice Fake Language/006/chara_06_long/chara_06_long_009.wav
   uploadId: 545475

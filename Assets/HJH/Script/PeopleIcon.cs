@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PeopleIcon : MonoBehaviour
 {
@@ -20,10 +21,13 @@ public class PeopleIcon : MonoBehaviour
     bool angry = false;
     bool veryAngry = false;
     public int lastChatIdx;
+
+    public RectTransform characterRecttransform;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        characterRecttransform = GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
@@ -102,15 +106,28 @@ public class PeopleIcon : MonoBehaviour
         }
     }
 
+
     public void AngryAni()
     {
-        //ani to peopleIcon
+        if (characterRecttransform != null)
+        {
+            
+            characterRecttransform
+                .DOShakeAnchorPos(0.5f, 20, 10, 90, false, true) 
+                .SetEase(Ease.Linear); 
+        }
     }
 
     public void VeryAngryAni()
     {
         //ani to peopleIcon, when end need to call VeryAngryAniEnd
-
+        if (characterRecttransform != null)
+        {
+            
+            characterRecttransform
+                .DOShakeAnchorPos(1f, 40, 10, 90, false, true) 
+                .SetEase(Ease.Linear).OnComplete(()=>VeryAngryAniEnd());
+        }
     }
 
     public void VeryAngryAniEnd()
