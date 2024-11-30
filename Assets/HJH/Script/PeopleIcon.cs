@@ -109,6 +109,7 @@ public class PeopleIcon : MonoBehaviour
 
     public void AngryAni()
     {
+        GameManager.instance.audioManager.StartAudio(SFX.Angry);
         if (characterRecttransform != null)
         {
             
@@ -120,6 +121,7 @@ public class PeopleIcon : MonoBehaviour
 
     public void VeryAngryAni()
     {
+        GameManager.instance.audioManager.StartAudio(SFX.VeryAngry);
         //ani to peopleIcon, when end need to call VeryAngryAniEnd
         if (characterRecttransform != null)
         {

@@ -245,24 +245,37 @@ public class GameManager : SerializedMonoBehaviour
     }
     IEnumerator MoveFloorCo(int idx)
     {
-        audioManager.StartAudioLoop(SFX.ElevatorMove);
         while(idx != floor)
         {
             if (idx > floor)
             {
                 yield return new WaitForSeconds(moveTime);
                 floor += 1;
+                if(idx != floor)
+                {
+                    audioManager.StartAudio(SFX.ElevatorMove);
+                }
+                else
+                {
+                    audioManager.StartAudio(SFX.ElevatorArrive);
+                }
                 uiManager.LampOn(floor);
             }
             else
             {
                 yield return new WaitForSeconds(moveTime);
                 floor -= 1;
+                if (idx != floor)
+                {
+                    audioManager.StartAudio(SFX.ElevatorMove);
+                }
+                else
+                {
+                    audioManager.StartAudio(SFX.ElevatorArrive);
+                }
                 uiManager.LampOn(floor);
             }
         }
-        audioManager.StopAudio(SFX.ElevatorMove);
-        audioManager.StartAudio(SFX.ElevatorArrive);
         gameState = GameState.OpenElevator;
     }
 
