@@ -65,7 +65,7 @@ public class TalkBox : MonoBehaviour
 
         AudioManager audioManager = GameManager.instance?.audioManager;
         if (audioManager != null)
-            audioManager.StopAudio(pSFX);
+            audioManager.StartAudioLoop(pSFX);
 
         if (talkEvent != null)
         {
@@ -102,8 +102,10 @@ public class TalkBox : MonoBehaviour
             StopCoroutine(talkEvent);
             talkEvent = null;
         }
-        
 
+        AudioManager audioManager = GameManager.instance?.audioManager;
+        if (audioManager != null)
+            audioManager.StopAudio(loopSFX);
 
         talkText.text = talkStr;
 
