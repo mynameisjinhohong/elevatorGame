@@ -173,7 +173,7 @@ public class GameManager : SerializedMonoBehaviour
         {
             for(int i =0; i< nowElevatorCharacter.Count; i++)
             {
-                if (nowElevatorCharacter[nowElevatorCharacter.Count - 1].characterData.targetFloor == floor)
+                if (nowElevatorCharacter[i].characterData.targetFloor == floor)
                 {
                     CharacterObj obj = nowElevatorCharacter[i];
                     nowElevatorCharacter.RemoveAt(i);
