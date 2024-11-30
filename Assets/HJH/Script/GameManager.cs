@@ -40,6 +40,7 @@ public class GameManager : SerializedMonoBehaviour
         }
     }
     public List<CharacterObj> nowElevatorCharacter= new List<CharacterObj>();
+    public Transform characterParentFirst;
     public Transform characterParent;
 
     public float moveTime;
@@ -204,6 +205,10 @@ public class GameManager : SerializedMonoBehaviour
     }
     private void RunTalkEvent(CharacterObj characterObj, int idx)
     {
+        if(idx == 1)
+        {
+            characterObj.transform.parent = characterParent;
+        }
         characterObj.RunTalkAction(idx, (res) =>
         {
             if (res)
@@ -236,9 +241,9 @@ public class GameManager : SerializedMonoBehaviour
                 if (peek.spawnTime <= time && CompleteEvent(peek))
                 {
                     CharacterObj obj = CharacterMgr.CreateCharacterObj(nowStage[floor].characterList.Dequeue());
-                    obj.transform.parent = characterParent;
+                    obj.transform.parent = characterParentFirst;
                     obj.GetComponent<RectTransform>().anchoredPosition = new Vector3(100, obj.GetComponent<RectTransform>().anchoredPosition.y, 0);
-                    obj.RunCharacterAction(CharacterAction.Show, () =>
+                    obj.RunCharacterAction(CharacterAction.Spawn, () =>
                     {
                         RunTalkEvent(obj, 1);
                     });
