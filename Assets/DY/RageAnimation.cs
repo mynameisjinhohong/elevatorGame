@@ -1,7 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Events;
-public class AnimationController : MonoBehaviour
+public class RageAnimation : MonoBehaviour
 {
     public RectTransform characterRecttransform; // 움직일 캐릭터 RectTransform
     public int bounceCount = 5; // 몇 번 반사할지 설정
@@ -82,5 +81,5 @@ public class AnimationController : MonoBehaviour
         }
 
         return reflectedPoint;
-    }
+}
 }
