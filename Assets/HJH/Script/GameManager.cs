@@ -27,6 +27,8 @@ public class GameManager : SerializedMonoBehaviour
 
     public ElevatorController elevator;
 
+    private bool stageEndFlag = false;
+
     public int damage;
     GameState gs;
     public int floor = 0;
@@ -81,6 +83,7 @@ public class GameManager : SerializedMonoBehaviour
     public void StageStart()
     {
         Time.timeScale = 1.0f;
+        stageEndFlag = false;
         hp = 100;
         floor = 0;
         uiManager.LampOn(floor);
@@ -285,8 +288,26 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StageOver()
     {
-        Time.timeScale = 0.0f;
+        if (stageEndFlag)
+            return;
+        stageEndFlag = true;
+
         stage += 1;
+        if(stage >= stageDatas.Length)
+        {
+            //게임 클리어시 이벤트
+            Time.timeScale = 1.0f;
+            uiManager.gameClear.RunGameClear();
+        }
+        else
+        {
+            //스테이지 클리어시 이벤트
+            uiManager.stageClear.RunStageClear(() =>
+            {
+                StageStart();
+            });
+
+        }
     }
 }
 

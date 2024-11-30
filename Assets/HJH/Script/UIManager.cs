@@ -28,6 +28,11 @@ public class UIManager : MonoBehaviour
 
     public GameObject chatCanvas;
     public TMP_Text chatCanvasText;
+
+    public StageClear   stageClear;
+    public GameOver     gameOver;
+    public GameClear    gameClear;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

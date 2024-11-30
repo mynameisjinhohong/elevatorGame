@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 90f24014a6ad1fd458b985a852509220
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191055
+  packageName: Game Voice Fake Language
+  packageVersion: 1.0
+  assetPath: Assets/Game Voice Fake Language/008/chara_08_middle/chara_08_middle_005.wav
+  uploadId: 545475
