@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b873104f84fafe40a68e9ba90776814, type: 3}
   m_Name: 2ndFloorData1F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
-  characterList: []
+  characterList:
+  - {fileID: 11400000, guid: d1a0f4656fb223a44bafaa815b08c8d5, type: 2}
+  - {fileID: 11400000, guid: 1d917726c8c19504c84826a3458b5cef, type: 2}
+  - {fileID: 11400000, guid: d4ccf5aff468e9943880664b3ca7ed08, type: 2}
+  - {fileID: 11400000, guid: 053e11f59ec27414490b6fb7b498d014, type: 2}
+  - {fileID: 11400000, guid: 328e69b10193cd8429bec6bbac86aac8, type: 2}
+  - {fileID: 11400000, guid: b37693368dfca784a954cf441ec7b5c9, type: 2}
