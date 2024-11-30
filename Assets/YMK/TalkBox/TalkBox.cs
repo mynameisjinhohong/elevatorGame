@@ -65,7 +65,7 @@ public class TalkBox : MonoBehaviour
 
         AudioManager audioManager = GameManager.instance?.audioManager;
         if (audioManager != null)
-            audioManager.StartAudioLoop(pSFX);
+            audioManager.StartAudio(pSFX);
 
         if (talkEvent != null)
         {
