@@ -17,6 +17,8 @@ public class StageClear : MonoBehaviour
     public void RunEndAniEvent()
     {
         CharacterMgr.ClearAll();
+        gameObject.SetActive(false);
+
         aniEndFun?.Invoke();
     }
 }
