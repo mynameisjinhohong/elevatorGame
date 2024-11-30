@@ -82,7 +82,7 @@ public class PeopleIcon : MonoBehaviour
                 }
             }
 
-            if (characterObj.completeCheck)
+            if (GameManager.instance.gameState == GameState.OpenElevator || GameManager.instance.gameState == GameState.OutCharacter)
                 return;
 
             patient.fillAmount = 1 - characterObj.GetPatienceTime() / characterObj.characterData.maxPatience;
