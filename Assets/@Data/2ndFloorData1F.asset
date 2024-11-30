@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
   characterList:
   - {fileID: 11400000, guid: 897f5c9fe41b7cb4fbd76e313d1fe150, type: 2}
+  - {fileID: 11400000, guid: 7d88906e0a65828428e6e4d677164e63, type: 2}
   - {fileID: 11400000, guid: 053e11f59ec27414490b6fb7b498d014, type: 2}
   - {fileID: 11400000, guid: 328e69b10193cd8429bec6bbac86aac8, type: 2}
   - {fileID: 11400000, guid: b37693368dfca784a954cf441ec7b5c9, type: 2}
   - {fileID: 11400000, guid: 5acfe624bbbb2344fa2756f7ba22558d, type: 2}
   - {fileID: 11400000, guid: 36932af36f98bab41ac8960db9f1775f, type: 2}
   - {fileID: 11400000, guid: 26c6b5cf784e6b44b95a6c3411c61f60, type: 2}
-  - {fileID: 11400000, guid: 7d88906e0a65828428e6e4d677164e63, type: 2}
