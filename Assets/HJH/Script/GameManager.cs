@@ -105,6 +105,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StageStart()
     {
+        completeEvent.Clear();
         Time.timeScale = 1.0f;
         runGame = true;
         hp = 100;
