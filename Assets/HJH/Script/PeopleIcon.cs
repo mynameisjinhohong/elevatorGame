@@ -81,7 +81,13 @@ public class PeopleIcon : MonoBehaviour
                     special.sprite = speical.GetImg();
                 }
             }
+
+            if (characterObj.completeCheck)
+                return;
+
             patient.fillAmount = 1 - characterObj.GetPatienceTime() / characterObj.characterData.maxPatience;
+
+
             if(patient.fillAmount > 0.5f  && !angry)
             {
                 angry = true;

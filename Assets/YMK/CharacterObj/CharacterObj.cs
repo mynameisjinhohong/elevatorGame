@@ -4,11 +4,13 @@ public class CharacterObj : MonoBehaviour
 {
     private NoParaDel   showFun;
     private NoParaDel   hideFun;
+    private NoParaDel   getOutFun;
 
     [SerializeField] private TalkBox  talkBox;
     [SerializeField] private Animator characterAni;
 
     [System.NonSerialized] public bool angryCheck = false;
+    [System.NonSerialized] public bool completeCheck = false;
 
     public CharacterData characterData
     {
@@ -41,12 +43,13 @@ public class CharacterObj : MonoBehaviour
 
     public virtual void Init(float pSpawnTime, CharacterData pCharacterData)
     {
-        getTime = pSpawnTime;
-        showFun = null;
-        hideFun = null;
-        characterData = pCharacterData;
-        angryCheck= false;
-        if(talkBox != null)
+        getTime         = pSpawnTime;
+        showFun         = null;
+        hideFun         = null;
+        characterData   = pCharacterData;
+        angryCheck      = false;
+        completeCheck   = false;
+        if (talkBox != null)
             talkBox.gameObject.SetActive(false);
     }
 
@@ -68,6 +71,12 @@ public class CharacterObj : MonoBehaviour
                     hideFun = pFun;
                 }
                 break;
+            case CharacterAction.GetOut:
+                {
+                    characterAni.Play("GetOut");
+                    hideFun = pFun;
+                }
+                break;
         }
     }
 
@@ -85,6 +94,11 @@ public class CharacterObj : MonoBehaviour
             case CharacterAction.Hide:
                 {
                     hideFun?.Invoke();
+                }
+                break;
+            case CharacterAction.GetOut:
+                {
+                    getOutFun?.Invoke();
                 }
                 break;
         }

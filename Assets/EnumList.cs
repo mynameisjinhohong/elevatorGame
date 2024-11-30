@@ -10,8 +10,9 @@ public enum Character
 
 public enum CharacterAction
 {
-    Show = 0,
-    Hide = 1,
+    Show    = 0,
+    Hide    = 1,
+    GetOut  = 2,
 }
 
 public enum GameState

@@ -161,6 +161,8 @@ public class GameManager : SerializedMonoBehaviour
                 tip += getTip;
                 uiManager.getMoney.RunGetMoney(getTip);
             }));
+            character.completeCheck = true;
+            completeEvent.Add(character.characterData);
         }
         else
         {
