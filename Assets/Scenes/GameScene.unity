@@ -3348,6 +3348,7 @@ MonoBehaviour:
   elevator: {fileID: 1931270604}
   damage: 25
   floor: 0
+  maxElevator: 4
 --- !u!1 &724421953
 GameObject:
   m_ObjectHideFlags: 0

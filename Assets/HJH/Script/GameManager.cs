@@ -50,6 +50,7 @@ public class GameManager : SerializedMonoBehaviour
     GameState gs;
     public int floor = 0;
     private HashSet<CharacterData> completeEvent = new HashSet<CharacterData>();
+    public int maxElevator;
 
     public GameState gameState
     {
@@ -213,6 +214,11 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StartInCharacter()
     {
+        if(maxElevator <= nowElevatorCharacter.Count)
+        {
+            gameState = GameState.CloseElevator;
+            return;
+        }
         if (nowStage.Count > floor)
         {
             if (nowStage[floor].characterList.Count > 0)

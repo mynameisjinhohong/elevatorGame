@@ -16,9 +16,10 @@ MonoBehaviour:
   spawnTime: 0
   maxPatience: 100
   targetFloor: 6
-  talkText1: "\uC624\uB298 \uBA38\uB9AC\uD558\uB294 \uB0A0\uC774\uC608\uC694"
-  talkText2: "\uBBF8\uC6A9\uC2E4\uC744 \uAC00\uACE0 \uC2F6\uC5B4\uC694."
-  talkText3: "\uBBF8\uC6A9\uC2E4\uC740 2\uCE35\uC5D0 \uC788\uC2B5\uB2C8\uB2E4!"
-  angryText: "\uD558.. \uBBF8\uC6A9\uC2E4 \uC608\uC57D\uC2DC\uAC04\uC5D0 \uB2A6\uC5C8\uC796\uC544!!"
-  thankText: "\uC5EC\uAE30 \uD301\uC774\uC608\uC694~!"
+  talkText1: "\uC800\uB294 703\uD638\uC5D0 \uC0B4\uC544\uC694."
+  talkText2: "703\uD638\uB85C \uC774\uB3D9\uD560\uAC8C\uC694!"
+  talkText3: "7\uCE35\uC774\uB77C\uACE0\uC694!!"
+  angryText: "\uC9C1\uC6D0\uB418\uAC8C \uBA4D\uCCAD\uD558\uB124!!"
+  thankText: "\uBE68\uB9AC \uB3C4\uCC29\uD588\uB124\uC694!"
+  requireEvent: []
   pointValue: {x: 80, y: 100}
