@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -50}
+  m_AnchoredPosition: {x: 15, y: -30}
   m_SizeDelta: {x: 260, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4379764719312900759
@@ -128,6 +128,7 @@ MonoBehaviour:
   characterObj: {fileID: 0}
   uIManager: {fileID: 0}
   chatText: {fileID: 6566434627797397757}
+  peopleIcon: {fileID: 7559505591997626320}
   patient: {fileID: 319182275349179016}
   body: {fileID: 7728792160979707807}
   haed: {fileID: 6657617198957872006}

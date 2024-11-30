@@ -7,6 +7,7 @@ public class PeopleIcon : MonoBehaviour
     public CharacterObj characterObj;
     public UIManager uIManager;
     public TMP_Text chatText;
+    public GameObject peopleIcon;
     public Image patient;
     public Image body;
     public Image haed;
@@ -16,6 +17,8 @@ public class PeopleIcon : MonoBehaviour
     public Image special;
     public Button chatButton;
     bool first = false;
+    bool angry = false;
+    bool veryAngry = false;
     public int lastChatIdx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,19 +78,44 @@ public class PeopleIcon : MonoBehaviour
                 }
             }
             patient.fillAmount = 1 - characterObj.GetPatienceTime() / characterObj.characterData.maxPatience;
-            if(patient.fillAmount > 0.5f )
+            if(patient.fillAmount > 0.5f  && !angry)
             {
+                angry = true;
                 if (characterObj.characterData.character == Character.Random)
                 {
                     RandomCharacterObj random = characterObj.gameObject.GetComponent<RandomCharacterObj>();
                     face.sprite = random.GetAngryFace();
+                    AngryAni();
                 }
                 else
                 {
                     SpeicalCharacterObj speicalObj = characterObj.gameObject.GetComponent<SpeicalCharacterObj>();
                     special.sprite = speicalObj.GetAngrySprite();
+                    AngryAni();
                 }
             }
+            if(!veryAngry && patient.fillAmount >= 1)
+            {
+                veryAngry = true;
+                VeryAngryAni();
+            }
         }
+    }
+
+    public void AngryAni()
+    {
+        //ani to peopleIcon
+    }
+
+    public void VeryAngryAni()
+    {
+        //ani to peopleIcon, when end need to call VeryAngryAniEnd
+
+    }
+
+    public void VeryAngryAniEnd()
+    {
+        GameManager.instance.hp -= GameManager.instance.damage;
+        
     }
 }

@@ -9,6 +9,7 @@ public class GameManager : SerializedMonoBehaviour
 {
     public static GameManager instance;
     public UIManager uiManager;
+    public AudioManager audioManager;
     #region 스테이지 관련
     public StageData[] stageDatas;
     public int stage = 0;
@@ -273,15 +274,6 @@ public class GameManager : SerializedMonoBehaviour
                 {
                     uiManager.OnFloorArrowButton(i);
                 }
-            }
-        }
-        for(int i =0; i<nowElevatorCharacter.Count; i++)
-        {
-            if (nowElevatorCharacter[i].GetPatienceTime() <= 0 && !nowElevatorCharacter[i].angryCheck)
-            {
-                hp -= damage;
-                nowElevatorCharacter[i].angryCheck = true;
-                //need to put character Icon angry effect
             }
         }
     }

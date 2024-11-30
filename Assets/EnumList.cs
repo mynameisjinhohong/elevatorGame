@@ -23,3 +23,18 @@ public enum GameState
     CloseElevator,
     MoveFloor
 }
+
+public enum SFX
+{
+    ElevatorOpen,
+    ElevatorClose,
+    ElevatorMove,
+    ElevatorArrive,
+    ElevatorCall,
+    NomalChat,
+    GoodChat,
+    EngryChat,
+    Angry,
+    VeryAngry,
+    ElevatorButton
+}
