@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 5F,17,2F
+  m_Name: 9-80,0,4_1
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 17
+  spawnTime: 80
   maxPatience: 100
-  targetFloor: 1
-  talkText1: "2\uCE35"
-  talkText2: 
-  talkText3: 
-  angryText: 
-  thankText: 
-  pointValue: {x: 136, y: 295}
+  targetFloor: 4
+  talkText1: "\uC220!!!"
+  talkText2: "\uB9E5\uC8FC!!!!!!"
+  talkText3: "\uBE68\uB9AC!!!!!!!!!!!!!!"
+  angryText: "\uB290\uB824!!!!!!!!"
+  thankText: "\uBE68\uB77C!!!!"
+  requireEvent: []
+  pointValue: {x: 100, y: 100}

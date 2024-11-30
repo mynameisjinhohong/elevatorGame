@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
+  m_Name: 18-180,4,1_1_Stranger
+  m_EditorClassIdentifier: 
+  character: 2
+  spawnTime: 100
+  maxPatience: 100
+  targetFloor: 1
+  talkText1: I was very satisfied with the Korean cafe, time passed so quickly that
+    it was already meal time.
+  talkText2: I want to try some unique Korean food.
+  talkText3: I heard that Korean haejangguk is very famous. Let's go there.
+  angryText: Holy, How can it be so slow?
+  thankText: Thank you for your service
+  requireEvent:
+  - {fileID: 11400000, guid: 5acf68d5bfd41954fac811757fa6368b, type: 2}
+  pointValue: {x: 100, y: 100}

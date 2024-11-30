@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
+  m_Name: 21-220,2,1_1_Thief
+  m_EditorClassIdentifier: 
+  character: 3
+  spawnTime: 100
+  maxPatience: 100
+  targetFloor: 1
+  talkText1: "\uD558\uD558 \uB098\uB294 \uC2E0\uCD9C\uADC0\uBAB0\uD55C \uAD34\uB3C4.
+    \uC624\uB298\uB3C4 \uBCF4\uC11D\uB4E4 \uC2A4\uD2F8 \uC131\uACF5~!"
+  talkText2: "\uC9C0\uAE08 \uB85C\uBE44\uC5D0 \uACBD\uCC30\uC774 \uAE54\uB838\uB2E4\uB294
+    \uC18C\uC2DD\uC744 \uB4E4\uC5C8\uC5B4"
+  talkText3: "\uBB54\uAC00 \uC778\uC0C1\uC744 \uC880 \uBC14\uAFB8\uACE0 \uBC16\uC73C\uB85C
+    \uB098\uAC00\uC57C\uACA0\uB294\uB370"
+  angryText: "\uB10C \uB3C4\uB451\uC774\uC5C8\uC73C\uBA74 \uC9C4\uC791\uC5D0 \uC7A1\uD614\uC744\uAC70\uC57C"
+  thankText: "\uBA38\uB9AC\uC2A4\uD0C0\uC77C\uC744 \uC880 \uBC14\uAFB8\uBA74 \uBCC0\uC7A5\uC774
+    \uB418\uAC9F\uC9C0"
+  requireEvent:
+  - {fileID: 11400000, guid: 5357b4af3e3437a48ab1ad8ced1f5475, type: 2}
+  pointValue: {x: 100, y: 100}

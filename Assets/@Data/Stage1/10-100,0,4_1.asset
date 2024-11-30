@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 1F,0,5F
+  m_Name: 10-100,0,4_1
   m_EditorClassIdentifier: 
-  character: 0
-  spawnTime: 0
-  maxPatience: 5
+  character: 2
+  spawnTime: 100
+  maxPatience: 100
   targetFloor: 4
-  talkText1: "5\uCE35"
-  talkText2: 
-  talkText3: 
-  angryText: 
-  thankText: 
-  pointValue: {x: 100, y: 213}
+  talkText1: Hello, I want to go to a famous Korean brand cafe.
+  talkText2: I heard that it's a cafe run by a very famous businessman.
+  talkText3: What was the name... StarTeahouse?
+  angryText: Holy, How can it be so slow?
+  thankText: Thank you for your service
+  requireEvent: []
+  pointValue: {x: 100, y: 100}
