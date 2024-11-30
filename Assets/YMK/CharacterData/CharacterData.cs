@@ -1,6 +1,4 @@
-
 using UnityEngine;
-using Sirenix.OdinInspector;
 using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "CharacterData", menuName = "Scriptable Objects/CharacterData")]
@@ -20,8 +18,6 @@ public class CharacterData : ScriptableObject
 
     public List<CharacterData> requireEvent;
 
-    [MinMaxSlider("@dynamicRange.x", "@dynamicRange.y * 10f", true)]
-    public Vector2Int   pointValue;
-    private Vector2Int  dynamicRange = new Vector2Int(0, 50);
+    public int   pointValue;
 
 }

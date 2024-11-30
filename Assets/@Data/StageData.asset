@@ -12,12 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94acebf2898cfc04c9461a4be1be6f10, type: 3}
   m_Name: StageData
   m_EditorClassIdentifier: 
-  floorData:
-  - {fileID: 11400000, guid: 26a8534a81dd5394a876c72aee618bb8, type: 2}
-  - {fileID: 11400000, guid: f0fc93e9088e9134b927a7bc348b5769, type: 2}
-  - {fileID: 11400000, guid: 237ee101ae2c1a149841551f6bcc57ff, type: 2}
-  - {fileID: 11400000, guid: 1accc9d3e728c984badc3318d91d77bc, type: 2}
-  - {fileID: 11400000, guid: 5d0adb76752271542aee1d2b59381f27, type: 2}
-  - {fileID: 11400000, guid: 042dc7908db15d3448e66cc8b62c266a, type: 2}
-  - {fileID: 11400000, guid: f7663e7a6b11a9a4ea2e48fb4caf1374, type: 2}
+  floorDatas:
   - {fileID: 11400000, guid: f0451a2f48acb1b449b43b6ce8416393, type: 2}

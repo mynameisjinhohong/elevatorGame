@@ -9,20 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 01dc862d1c31ee94c8302c8fe75b467d, type: 3}
   m_Name: FloorData1F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
-  characterList:
-  - {fileID: 11400000, guid: 897f5c9fe41b7cb4fbd76e313d1fe150, type: 2}
-  - {fileID: 11400000, guid: 7d88906e0a65828428e6e4d677164e63, type: 2}
-  - {fileID: 11400000, guid: beaa957dcdff5324c96a5f8488213df3, type: 2}
-  - {fileID: 11400000, guid: 816811b542eec38469a73967b2f9249a, type: 2}
-  - {fileID: 11400000, guid: 20272ff656069ff48a1618288220f9f0, type: 2}
-  - {fileID: 11400000, guid: 5acf68d5bfd41954fac811757fa6368b, type: 2}
-  - {fileID: 11400000, guid: 5357b4af3e3437a48ab1ad8ced1f5475, type: 2}
-  - {fileID: 11400000, guid: b75d1e579af7f53488a0b51b6d50c541, type: 2}
-  - {fileID: 11400000, guid: d82ac30a022248546bc9151fcf9cff90, type: 2}
-  - {fileID: 11400000, guid: 276ba22a1215c724fa69278a5f9390a6, type: 2}
-  - {fileID: 11400000, guid: a64752c2fa7c13d47971cc51b72dad69, type: 2}
-  - {fileID: 11400000, guid: cc79ce9a0e5cecf4282007a10d9578bd, type: 2}
-  - {fileID: 11400000, guid: a01b68c713edf1a408dd1b830aa32e86, type: 2}
+  characterList: []

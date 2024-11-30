@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 01dc862d1c31ee94c8302c8fe75b467d, type: 3}
   m_Name: FloorData2F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
-  characterList:
-  - {fileID: 11400000, guid: 23b8d4e4c4677814d88abf33c3e3e00d, type: 2}
-  - {fileID: 11400000, guid: d3e0dabf81d4d6144894ebb1d3d30be2, type: 2}
-  - {fileID: 11400000, guid: 50a43549e75520646b0c01e29d061524, type: 2}
+  characterList: []

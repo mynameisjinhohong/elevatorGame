@@ -3335,7 +3335,7 @@ MonoBehaviour:
     SerializationNodes: []
   uiManager: {fileID: 1847452788}
   audioManager: {fileID: 1226829436}
-  stageDatas:
+  stages:
   - {fileID: 11400000, guid: 0494730876d368e4c85290a2850debba, type: 2}
   stage: 0
   nowStage: []

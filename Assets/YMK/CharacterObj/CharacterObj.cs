@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using Sirenix.OdinInspector;
 
 public class CharacterObj : MonoBehaviour
 {
@@ -18,7 +16,6 @@ public class CharacterObj : MonoBehaviour
         private set;
     }
 
-    private int point = -1;
     public int GetPoint()
     {
         //해당 캐릭터가 주는 점수
@@ -26,11 +23,7 @@ public class CharacterObj : MonoBehaviour
         if (characterData == null)
             return 0;
 
-        if(point == -1)
-        {
-            point = UnityEngine.Random.Range(characterData.pointValue.x, characterData.pointValue.y);
-        }
-        return point;
+        return characterData.pointValue;
     }
 
     private float getTime;
@@ -48,7 +41,6 @@ public class CharacterObj : MonoBehaviour
 
     public virtual void Init(float pSpawnTime, CharacterData pCharacterData)
     {
-        point = -1;
         getTime = pSpawnTime;
         showFun = null;
         hideFun = null;
