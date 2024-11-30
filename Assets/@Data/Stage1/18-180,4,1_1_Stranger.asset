@@ -24,4 +24,4 @@ MonoBehaviour:
   thankText: Thank you for your service
   requireEvent:
   - {fileID: 11400000, guid: 5acf68d5bfd41954fac811757fa6368b, type: 2}
-  pointValue: 0
+  pointValue: 100

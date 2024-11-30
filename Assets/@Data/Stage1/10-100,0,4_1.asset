@@ -22,4 +22,4 @@ MonoBehaviour:
   angryText: Holy, How can it be so slow?
   thankText: Thank you for your service
   requireEvent: []
-  pointValue: 0
+  pointValue: 100

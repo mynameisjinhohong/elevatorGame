@@ -23,4 +23,4 @@ MonoBehaviour:
   thankText: "\uC6B0\uB9AC \uC9D1 \uC138\uD0C1\uAE30\uAC00 \uACE0\uC7A5\uB098\uC11C\uC694,
     \uAC10\uC0AC\uD569\uB2C8\uB2E4."
   requireEvent: []
-  pointValue: 0
+  pointValue: 100

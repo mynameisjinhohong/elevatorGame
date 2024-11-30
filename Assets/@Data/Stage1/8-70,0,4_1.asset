@@ -24,4 +24,4 @@ MonoBehaviour:
   thankText: "\uC138\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uD798\uC774 \uB098\uB294 \uD53C\uC790\uB294?
     \uC5B4\uAE68 \uCAD9\uD53C\uC790\u314B\u314B"
   requireEvent: []
-  pointValue: 0
+  pointValue: 100

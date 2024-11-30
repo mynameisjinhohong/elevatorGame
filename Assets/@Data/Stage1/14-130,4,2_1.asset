@@ -24,4 +24,4 @@ MonoBehaviour:
   angryText: "\uC774 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB3C4 \uC9C0\uC625\uC774\uB124"
   thankText: "\uACFC\uC5F0 \uCC9C\uAD6D\uC758 \uB9DB\uC77C\uC9C0 \uBCF4\uC790\uACE0"
   requireEvent: []
-  pointValue: 0
+  pointValue: 100

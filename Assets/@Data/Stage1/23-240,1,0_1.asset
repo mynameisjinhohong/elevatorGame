@@ -26,4 +26,4 @@ MonoBehaviour:
   thankText: "\uBE68\uB9AC \uC2E0\uACE0\uD574\uC57C\uC9C0"
   requireEvent:
   - {fileID: 11400000, guid: 2f2ed7ec62754994993cdd3b84f7d81c, type: 2}
-  pointValue: 0
+  pointValue: 100
