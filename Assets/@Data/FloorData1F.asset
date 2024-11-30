@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: FloorData1F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
   characterList:
-  - {fileID: 11400000, guid: 897f5c9fe41b7cb4fbd76e313d1fe150, type: 2}
-  - {fileID: 11400000, guid: 7d88906e0a65828428e6e4d677164e63, type: 2}
+  - {fileID: 11400000, guid: d1a0f4656fb223a44bafaa815b08c8d5, type: 2}
+  - {fileID: 11400000, guid: 1d917726c8c19504c84826a3458b5cef, type: 2}
+  - {fileID: 11400000, guid: 11a05acdda9a8b64db2688275f0a6eba, type: 2}
   - {fileID: 11400000, guid: beaa957dcdff5324c96a5f8488213df3, type: 2}
   - {fileID: 11400000, guid: 816811b542eec38469a73967b2f9249a, type: 2}
   - {fileID: 11400000, guid: 20272ff656069ff48a1618288220f9f0, type: 2}
