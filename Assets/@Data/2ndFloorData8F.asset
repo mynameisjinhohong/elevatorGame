@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2ndFloorData8F
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
   characterList:
+  - {fileID: 11400000, guid: 3939fec4157e6734f903cf9d1e8e0f17, type: 2}
   - {fileID: 11400000, guid: 7281599530966b041b23688987cd1f3d, type: 2}
   - {fileID: 11400000, guid: d489abb29b00196478ec9e0a267ffcfe, type: 2}
   - {fileID: 11400000, guid: 72d77c19205bd194caa8bf02a8632959, type: 2}
