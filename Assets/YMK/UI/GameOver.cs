@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
     {
         gameObject.SetActive(true);
         int tipValue = GameManager.instance ? GameManager.instance.tip : 0;
-        string tipFormat = string.Format("당신이 마지막으로 받는 팁 : {0:N0}$", tipValue);
+        string tipFormat = string.Format("당신이 마지막으로 받은 팁 : {0:N0}$", tipValue);
         tipText.text = tipFormat;
         ani.Play();
     }

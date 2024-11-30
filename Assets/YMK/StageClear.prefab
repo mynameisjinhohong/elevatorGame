@@ -416,6 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ani: {fileID: 9042219188789686734}
+  tipText: {fileID: 2325645655240356824}
 --- !u!1 &6230193187343630295
 GameObject:
   m_ObjectHideFlags: 0
