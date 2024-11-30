@@ -245,6 +245,7 @@ public class GameManager : SerializedMonoBehaviour
     }
     IEnumerator MoveFloorCo(int idx)
     {
+        audioManager.StartAudioLoop(SFX.ElevatorMove);
         while(idx != floor)
         {
             if (idx > floor)
@@ -260,6 +261,8 @@ public class GameManager : SerializedMonoBehaviour
                 uiManager.LampOn(floor);
             }
         }
+        audioManager.StopAudio(SFX.ElevatorMove);
+        audioManager.StartAudio(SFX.ElevatorArrive);
         gameState = GameState.OpenElevator;
     }
 
@@ -278,6 +281,7 @@ public class GameManager : SerializedMonoBehaviour
                 if (nowStage[i].characterList.Peek().spawnTime < time)
                 {
                     uiManager.OnFloorArrowButton(i);
+                    audioManager.StartAudio(SFX.ElevatorCall);
                 }
             }
         }

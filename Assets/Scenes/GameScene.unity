@@ -2497,7 +2497,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   uiManager: {fileID: 1847452788}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1226829436}
   stageDatas:
   - {fileID: 11400000, guid: 0c2942c4a5e8c57499098d6816cf8dfe, type: 2}
   stage: 0
@@ -3944,7 +3944,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 522edbcfce737514ea5540fa56ce5b75, type: 3}
   m_Resource: {fileID: 8300000, guid: 522edbcfce737514ea5540fa56ce5b75, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -14,7 +14,7 @@ public class AudioManager : SerializedMonoBehaviour
     public Dictionary<SFX,AudioSource> audioCheck = new Dictionary<SFX,AudioSource>();
 
 
-    public void StartAudio(SFX sfx)
+    public void StartAudioLoop(SFX sfx)
     {
         
         if (audioCheck.ContainsKey(sfx))
@@ -28,6 +28,24 @@ public class AudioManager : SerializedMonoBehaviour
             AudioSource auu =  au.AddComponent<AudioSource>();
             auu.clip = audioDic[sfx];
             auu.loop = true;
+            auu.Play();
+            audioCheck[sfx] = auu;
+        }
+    }
+
+    public void StartAudio(SFX sfx)
+    {
+        if (audioCheck.ContainsKey(sfx))
+        {
+            audioCheck[sfx].Play();
+        }
+        else
+        {
+            GameObject au = new GameObject(sfx.ToString());
+            au.transform.parent = transform;
+            AudioSource auu = au.AddComponent<AudioSource>();
+            auu.clip = audioDic[sfx];
+            auu.Play();
             audioCheck[sfx] = auu;
         }
     }
@@ -38,5 +56,15 @@ public class AudioManager : SerializedMonoBehaviour
         {
             audioCheck[sfx].Stop();
         }
+    }
+
+    public void StopBGM()
+    {
+        bgm.Stop();
+    }
+
+    public void StartBGM()
+    {
+        bgm.Play();
     }
 }
