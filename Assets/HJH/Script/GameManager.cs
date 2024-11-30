@@ -163,16 +163,16 @@ public class GameManager : SerializedMonoBehaviour
                 tip += getTip;
                 uiManager.getMoney.RunGetMoney(getTip);
             }));
-            character.completeCheck = true;
-            completeEvent.Add(character.characterData);
         }
         else
         {
             stageOutPeopleCount++;
             character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.GetOut, () => CharacterRemove(character)));
         }
-        
+        character.completeCheck = true;
+        completeEvent.Add(character.characterData);
     }
+
     public void CharacterRemove(CharacterObj obj)
     {
         uiManager.RemovePeopleIcon(obj);
