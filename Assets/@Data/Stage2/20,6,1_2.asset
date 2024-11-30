@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 60,3,0
+  m_Name: 20,6,1_2
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 60
+  spawnTime: 20
   maxPatience: 100
-  targetFloor: 0
-  talkText1: "\uC5EC\uAE30\uC11C \uB098\uAC00\uACE0\uC2F6\uC5B4\uC694"
-  talkText2: "\uCD9C\uC785\uAD6C\uAC00 \uBA87\uCE35\uC5D0 \uC788\uB098\uC694?"
-  talkText3: 1
-  angryText: "\uBC14\uBCF4"
-  thankText: Happy
-  pointValue: {x: 100, y: 110}
+  targetFloor: 1
+  talkText1: "\uC800\uB294 703\uD638\uC5D0 \uC0B4\uC544\uC694."
+  talkText2: "703\uD638\uB85C \uC774\uB3D9\uD560\uAC8C\uC694!"
+  talkText3: "7\uCE35\uC774\uB77C\uACE0\uC694!!"
+  angryText: "\uC9C1\uC6D0\uB418\uAC8C \uBA4D\uCCAD\uD558\uB124!!"
+  thankText: "\uBE68\uB9AC \uB3C4\uCC29\uD588\uB124\uC694!"
+  pointValue: {x: 80, y: 100}
