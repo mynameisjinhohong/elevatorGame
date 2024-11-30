@@ -69,11 +69,12 @@ public class RandomCharacterObj : CharacterObj
             SetSprite(face, faceData.face);
     }
 
-    public Sprite GetHairFront() => hairFront.sprite;
-    public Sprite GetHairBack() => hairBack.sprite;
-    public Sprite GetBody() => body.sprite;
-    public Sprite GetHead() => head.sprite;
-    public Sprite GetFace() => face.sprite;
+    public Sprite GetHairFront() => hairData.hairFront;
+    public Sprite GetHairBack() => hairData.hairBack;
+    public Sprite GetBody() => bodyData.body;
+    public Sprite GetHead() => headData.head;
+    public Sprite GetFace() => faceData.face;
+    public Sprite GetAngryFace() => faceData.angryFace;
 
 }
 

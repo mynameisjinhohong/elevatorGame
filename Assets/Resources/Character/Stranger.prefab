@@ -85,6 +85,8 @@ MonoBehaviour:
   talkBox: {fileID: 5636749348565667801}
   characterAni: {fileID: 7958699075809455638}
   character: {fileID: 2147956274794163586}
+  normalFace: {fileID: 21300000, guid: d1c53925bc0b7b64f97cf9b3af9bb99f, type: 3}
+  angryFace: {fileID: 21300000, guid: 600b4ddd489a3c94690129a65ed8fcfa, type: 3}
 --- !u!1 &7475359272512794741
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d1c53925bc0b7b64f97cf9b3af9bb99f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
