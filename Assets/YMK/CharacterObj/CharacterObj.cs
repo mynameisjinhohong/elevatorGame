@@ -5,6 +5,7 @@ public class CharacterObj : MonoBehaviour
     private NoParaDel   showFun;
     private NoParaDel   hideFun;
     private NoParaDel   getOutFun;
+    private NoParaDel   spawnFun;
 
     [SerializeField] private TalkBox  talkBox;
     [SerializeField] private Animator characterAni;
@@ -77,6 +78,12 @@ public class CharacterObj : MonoBehaviour
                     getOutFun = pFun;
                 }
                 break;
+            case CharacterAction.Spawn:
+                {
+                    characterAni.Play("Spawn");
+                    spawnFun = pFun;
+                }
+                break;
         }
     }
 
@@ -99,6 +106,11 @@ public class CharacterObj : MonoBehaviour
             case CharacterAction.GetOut:
                 {
                     getOutFun?.Invoke();
+                }
+                break;
+            case CharacterAction.Spawn:
+                {
+                    spawnFun?.Invoke();
                 }
                 break;
         }

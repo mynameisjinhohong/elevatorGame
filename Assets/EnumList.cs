@@ -13,6 +13,7 @@ public enum CharacterAction
     Show    = 0,
     Hide    = 1,
     GetOut  = 2,
+    Spawn   = 3,
 }
 
 public enum GameState
