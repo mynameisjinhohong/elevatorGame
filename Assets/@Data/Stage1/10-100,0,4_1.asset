@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 2
   spawnTime: 100
-  maxPatience: 100
+  maxPatience: 20
   targetFloor: 4
   talkText1: Hello, I want to go to a famous Korean brand cafe.
   talkText2: I heard that it's a cafe run by a very famous businessman.
@@ -22,4 +22,4 @@ MonoBehaviour:
   angryText: Holy, How can it be so slow?
   thankText: Thank you for your service
   requireEvent: []
-  pointValue: {x: 100, y: 100}
+  pointValue: 0

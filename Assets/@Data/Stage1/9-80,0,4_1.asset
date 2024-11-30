@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   spawnTime: 80
-  maxPatience: 100
+  maxPatience: 20
   targetFloor: 4
   talkText1: "\uC220!!!"
   talkText2: "\uB9E5\uC8FC!!!!!!"
@@ -22,4 +22,4 @@ MonoBehaviour:
   angryText: "\uB290\uB824!!!!!!!!"
   thankText: "\uBE68\uB77C!!!!"
   requireEvent: []
-  pointValue: {x: 100, y: 100}
+  pointValue: 0

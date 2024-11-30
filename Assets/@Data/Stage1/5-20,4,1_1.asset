@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 0
   spawnTime: 20
-  maxPatience: 100
+  maxPatience: 20
   targetFloor: 1
   talkText1: "\uC544 \uBC30\uBD80\uB974\uAC8C \uC798\uBA39\uC5C8\uB2E4. \uC774\uC81C
     \uC880 \uB180\uB7EC \uAC00\uBCFC\uAE4C?"
@@ -24,4 +24,4 @@ MonoBehaviour:
   angryText: "\uAC8C\uC784 \uD55C\uD310\uD558\uAE30 \uB354\uB7FD\uAC8C \uD798\uB4DC\uB124"
   thankText: "\uAD7F\uAD7F \uACE0\uB9C8\uC6CC\uC6A9"
   requireEvent: []
-  pointValue: {x: 100, y: 100}
+  pointValue: 0

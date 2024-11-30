@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 2
   spawnTime: 100
-  maxPatience: 100
+  maxPatience: 20
   targetFloor: 1
   talkText1: I was very satisfied with the Korean cafe, time passed so quickly that
     it was already meal time.
@@ -24,4 +24,4 @@ MonoBehaviour:
   thankText: Thank you for your service
   requireEvent:
   - {fileID: 11400000, guid: 5acf68d5bfd41954fac811757fa6368b, type: 2}
-  pointValue: {x: 100, y: 100}
+  pointValue: 0
