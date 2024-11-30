@@ -25,4 +25,5 @@ MonoBehaviour:
     \uAE30\uB300\uAC00 \uCEF8\uB358 \uB9CC\uD07C \uB354\uC6B1 \uAC00\uC2B4\uC774
     \uC544\uD515\uB2C8\uB2E4."
   thankText: "\uC774\uB807\uAC8C \uC2E0\uACBD \uC368 \uC8FC\uC154\uC11C \uAC10\uC0AC\uB4DC\uB9BD\uB2C8\uB2E4."
-  pointValue: {x: 150, y: 150}
+  requireEvent: []
+  pointValue: 150

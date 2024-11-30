@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 20,6,1_2
+  m_Name: 160,3,5_2
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 20
+  spawnTime: 160
   maxPatience: 100
-  targetFloor: 1
-  talkText1: "\uC624\uB298 \uBA38\uB9AC\uD558\uB294 \uB0A0\uC774\uC608\uC694"
-  talkText2: "\uBBF8\uC6A9\uC2E4\uC744 \uAC00\uACE0 \uC2F6\uC5B4\uC694."
-  talkText3: "\uBBF8\uC6A9\uC2E4\uC740 2\uCE35\uC5D0 \uC788\uC2B5\uB2C8\uB2E4!"
-  angryText: "\uD558.. \uBBF8\uC6A9\uC2E4 \uC608\uC57D\uC2DC\uAC04\uC5D0 \uB2A6\uC5C8\uC796\uC544!!"
-  thankText: "\uC5EC\uAE30 \uD301\uC774\uC608\uC694~!"
+  targetFloor: 5
+  talkText1: "\uC548\uB155\uD558\uC138\uC694. 601\uD638\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694."
+  talkText2: "601\uD638\uB294 6\uCE35"
+  talkText3: "6\uCE35!!"
+  angryText: "\uB2F9\uC2E0 \uBC14\uBCF4?"
+  thankText: "\uB098\uC774\uC2A4"
   requireEvent: []
   pointValue: 100

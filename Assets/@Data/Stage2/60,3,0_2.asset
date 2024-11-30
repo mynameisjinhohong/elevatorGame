@@ -21,4 +21,5 @@ MonoBehaviour:
   talkText3: 1
   angryText: "\uBC14\uBCF4"
   thankText: Happy
-  pointValue: {x: 100, y: 110}
+  requireEvent: []
+  pointValue: 100

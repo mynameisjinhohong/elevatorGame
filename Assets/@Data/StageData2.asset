@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94acebf2898cfc04c9461a4be1be6f10, type: 3}
   m_Name: StageData2
   m_EditorClassIdentifier: 
-  floorData:
+  floorDatas:
   - {fileID: 11400000, guid: 7e375554f40a85e4285d818ed66e290e, type: 2}
   - {fileID: 11400000, guid: fbbb1e5a4095f60478b5b2b1c59a9b28, type: 2}
   - {fileID: 11400000, guid: 3b1d5735facf0a54f947c3fdffae3ce9, type: 2}
