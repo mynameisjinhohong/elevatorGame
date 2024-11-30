@@ -33,6 +33,8 @@ public class UIManager : MonoBehaviour
     public GameOver     gameOver;
     public GameClear    gameClear;
 
+    public GetMoney     getMoney;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

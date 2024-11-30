@@ -20,7 +20,23 @@ public class GameManager : SerializedMonoBehaviour
     public float maxTime = 300;
     #endregion
     public int tip = 0;
-    public int hp = 100;
+
+    private int HP = 100;
+    public int hp
+    {
+        get
+        {
+            return HP;
+        }
+        set
+        {
+            HP = value;
+            if(HP == 0)
+            {
+                GameOver();
+            }
+        }
+    }
     public List<CharacterObj> nowElevatorCharacter= new List<CharacterObj>();
     public Transform characterParent;
 
@@ -28,7 +44,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public ElevatorController elevator;
 
-    private bool stageEndFlag = false;
+    private bool runGame = true;
 
     public int damage;
     GameState gs;
@@ -84,7 +100,7 @@ public class GameManager : SerializedMonoBehaviour
     public void StageStart()
     {
         Time.timeScale = 1.0f;
-        stageEndFlag = false;
+        runGame = true;
         hp = 100;
         floor = 0;
         uiManager.LampOn(floor);
@@ -128,7 +144,14 @@ public class GameManager : SerializedMonoBehaviour
     {
         if (character.GetPatienceTime() > 0)
         {
-            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=> CharacterRemove(character)));
+            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=>
+            {
+                CharacterRemove(character);
+
+                int getTip = character.GetPoint();
+                tip += getTip;
+                uiManager.getMoney.RunGetMoney(getTip);
+            }));
         }
         else
         {
@@ -282,6 +305,8 @@ public class GameManager : SerializedMonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (runGame == false)
+            return;
         time += Time.deltaTime;
         if(time >= maxTime)
         {
@@ -302,10 +327,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StageOver()
     {
-        if (stageEndFlag)
-            return;
-        stageEndFlag = true;
-
+        runGame = false;
         stage += 1;
         if(stage >= stageDatas.Length)
         {
@@ -322,6 +344,12 @@ public class GameManager : SerializedMonoBehaviour
             });
 
         }
+    }
+
+    public void GameOver()
+    {
+        runGame = false;
+        uiManager.gameOver.RunGameOver();
     }
 }
 

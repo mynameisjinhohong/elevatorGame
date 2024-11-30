@@ -116,8 +116,14 @@ public class CharacterObj : MonoBehaviour
 
         }
 
+        bool showReAsk = pTalkIdx != 3;
         talkBox.gameObject.SetActive(true);
-        talkBox.RunReAskText(str, pTalkIdx != 3,0, pFun);
+
+        SFX[] sfxArray = new SFX[] { SFX.nomalChat1, SFX.nomalChat2, SFX.nomalChat3 };
+        int rIdx = UnityEngine.Random.Range(0, sfxArray.Length);
+        SFX randomSFX = sfxArray[rIdx];
+
+        talkBox.RunReAskText(str, showReAsk, 0, randomSFX, pFun);
     }
 
     public void RunAngryTalkAction(NoParaDel pFun)
@@ -126,7 +132,12 @@ public class CharacterObj : MonoBehaviour
         string str = characterData.angryText;
         SetAngry(true);
         talkBox.gameObject.SetActive(true);
-        talkBox.RunNormalText(str,1f, pFun);
+
+        SFX[] sfxArray = new SFX[] { SFX.angryChat1, SFX.angryChat2, SFX.angryChat3 };
+        int rIdx = UnityEngine.Random.Range(0, sfxArray.Length);
+        SFX randomSFX = sfxArray[rIdx];
+
+        talkBox.RunNormalText(str,1f, randomSFX,pFun);
     }
 
     public void RunThankTalkAction(NoParaDel pFun)
@@ -135,7 +146,12 @@ public class CharacterObj : MonoBehaviour
         string str = characterData.thankText;
         SetAngry(false);
         talkBox.gameObject.SetActive(true);
-        talkBox.RunNormalText(str, 1f, pFun);
+
+        SFX[] sfxArray = new SFX[] { SFX.goodChat1, SFX.goodChat2, SFX.goodChat3 };
+        int rIdx = UnityEngine.Random.Range(0, sfxArray.Length);
+        SFX randomSFX = sfxArray[rIdx];
+
+        talkBox.RunNormalText(str, 1f, randomSFX, pFun);
     }
 
     protected virtual void SetAngry(bool state)
