@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: 2
   spawnTime: 160
-  maxPatience: 100
+  maxPatience: 50
   targetFloor: 4
   talkText1: Hello, I want to go to a famous Korean brand cafe.
   talkText2: I heard that it's a cafe run by a very famous businessman.
