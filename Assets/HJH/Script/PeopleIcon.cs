@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PeopleIcon : MonoBehaviour
 {
     public CharacterObj characterObj;
-
+    public UIManager uIManager;
     public TMP_Text chatText;
     public Image patient;
     public Image body;
@@ -14,6 +14,7 @@ public class PeopleIcon : MonoBehaviour
     public Image face;
     public Image backHair;
     public Image special;
+    public Button chatButton;
     bool first = false;
     public int lastChatIdx;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,7 +43,7 @@ public class PeopleIcon : MonoBehaviour
                         chatText.text = characterObj.characterData.talkText3;
                         break;
                 }
-                
+                chatButton.onClick.AddListener(() => uIManager.ChatCanvasOn(chatText.text));
                 if (characterObj.characterData.character == Character.Random)
                 {
                     RandomCharacterObj random = characterObj.gameObject.GetComponent<RandomCharacterObj>();
@@ -74,7 +75,19 @@ public class PeopleIcon : MonoBehaviour
                 }
             }
             patient.fillAmount = 1 - characterObj.GetPatienceTime() / characterObj.characterData.maxPatience;
+            if(patient.fillAmount > 0.5f )
+            {
+                if (characterObj.characterData.character == Character.Random)
+                {
+                    RandomCharacterObj random = characterObj.gameObject.GetComponent<RandomCharacterObj>();
+                    face.sprite = random.GetAngryFace();
+                }
+                else
+                {
+                    SpeicalCharacterObj speicalObj = characterObj.gameObject.GetComponent<SpeicalCharacterObj>();
+                    special.sprite = speicalObj.GetAngrySprite();
+                }
+            }
         }
-
     }
 }

@@ -25,6 +25,9 @@ public class UIManager : MonoBehaviour
     public GameObject peopleIconPrefab;
     public List<GameObject> peopleList;
 
+
+    public GameObject chatCanvas;
+    public TMP_Text chatCanvasText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -55,9 +58,21 @@ public class UIManager : MonoBehaviour
     public void CreateNewPeopleIcon(CharacterObj characterObj,int idx)
     {
         GameObject icon =  Instantiate(peopleIconPrefab,peopleArea);
+        icon.GetComponent<PeopleIcon>().uIManager = this;
         icon.GetComponent<PeopleIcon>().characterObj= characterObj;
         icon.GetComponent<PeopleIcon>().lastChatIdx= idx;
         peopleList.Add(icon);
+    }
+
+    public void ChatCanvasOn(string text)
+    {
+        chatCanvas.SetActive(true);
+        chatCanvasText.text = text;
+    }
+
+    public void ChatCanvasOff()
+    {
+        chatCanvas.SetActive(false);
     }
 
     public void RemovePeopleIcon(CharacterObj characterObj)
