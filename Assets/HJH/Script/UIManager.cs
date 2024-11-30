@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,10 @@ public class UIManager : MonoBehaviour
     public GameObject[] lamp;
 
     public Button[] elevatorButton;
+
+    public Transform peopleArea;
+    public GameObject peopleIconPrefab;
+    public List<GameObject> peopleList;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,7 +52,28 @@ public class UIManager : MonoBehaviour
         tipText.text = GameManager.instance.tip.ToString() + "$";
     }
 
-    
+    public void CreateNewPeopleIcon(CharacterObj characterObj,int idx)
+    {
+        GameObject icon =  Instantiate(peopleIconPrefab,peopleArea);
+        icon.GetComponent<PeopleIcon>().characterObj= characterObj;
+        icon.GetComponent<PeopleIcon>().lastChatIdx= idx;
+        peopleList.Add(icon);
+    }
+
+    public void RemovePeopleIcon(CharacterObj characterObj)
+    {
+        for(int i =0; i<peopleList.Count; i++)
+        {
+            if (peopleList[i].GetComponent<PeopleIcon>().characterObj == characterObj)
+            {
+                Destroy(peopleList[i]);
+                peopleList.RemoveAt(i);
+                break;
+            }
+        }
+    }
+
+
 
 
     public void OnFloorArrowButton(int idx)

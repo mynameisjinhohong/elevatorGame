@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.TextCore.Text;
 
 public class GameManager : SerializedMonoBehaviour
 {
@@ -26,7 +27,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public ElevatorController elevator;
 
-
+    public int damage;
     GameState gs;
     public int floor = 0;
     public GameState gameState
@@ -121,18 +122,23 @@ public class GameManager : SerializedMonoBehaviour
     {
         if (character.GetPatienceTime() > 0)
         {
-            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=> StartOutCharacter()));
+            character.RunThankTalkAction(() =>character.RunCharacterAction(CharacterAction.Hide,()=> CharacterRemove(character)));
         }
         else
         {
-            character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.Hide, () => StartOutCharacter()));
+            character.RunAngryTalkAction(() => character.RunCharacterAction(CharacterAction.Hide, () => CharacterRemove(character)));
         }
         
+    }
+    public void CharacterRemove(CharacterObj obj)
+    {
+        uiManager.RemovePeopleIcon(obj);
+        StartOutCharacter();
     }
 
     public void StartOutCharacter()
     {
-        if(nowElevatorCharacter.Count > 0)
+        if (nowElevatorCharacter.Count > 0)
         {
             for(int i =0; i< nowElevatorCharacter.Count; i++)
             {
@@ -165,6 +171,8 @@ public class GameManager : SerializedMonoBehaviour
             }
             else
             {
+                nowElevatorCharacter.Add(characterObj);
+                uiManager.CreateNewPeopleIcon(characterObj,idx);
                 characterObj.RunCharacterAction(CharacterAction.Hide, () => StartInCharacter());
             }
         }
@@ -183,7 +191,6 @@ public class GameManager : SerializedMonoBehaviour
                     CharacterObj obj = CharacterMgr.CreateCharacterObj(nowStage[floor].characterList.Dequeue());
                     obj.transform.parent = characterParent;
                     obj.GetComponent<RectTransform>().anchoredPosition = new Vector3(100, obj.GetComponent<RectTransform>().anchoredPosition.y, 0);
-                    nowElevatorCharacter.Add(obj);
                     obj.RunCharacterAction(CharacterAction.Show, () =>
                     {
                         RunTalkEvent(obj, 1);
@@ -269,7 +276,7 @@ public class GameManager : SerializedMonoBehaviour
         {
             if (nowElevatorCharacter[i].GetPatienceTime() <= 0 && !nowElevatorCharacter[i].angryCheck)
             {
-                hp -= nowElevatorCharacter[i].GetPoint();
+                hp -= damage;
                 nowElevatorCharacter[i].angryCheck = true;
                 //need to put character Icon angry effect
             }

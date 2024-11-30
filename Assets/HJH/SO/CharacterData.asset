@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
+  m_Name: CharacterData
+  m_EditorClassIdentifier: 
+  character: 3
+  spawnTime: 0
+  maxPatience: 0
+  targetFloor: 0
+  talkText1: "\uD558\uD558 \uB098\uB294 \uB3C4\uB451"
+  talkText2: "\uB3C4\uB451\uC774 \uCD5C\uACE0\uC57C"
+  talkText3: "\uB3C4\uB451\uC9C8\uD560 \uACF3\uC73C\uB85C \uAC00\uC790"
+  angryText: "\uBC30\uB4DC"
+  thankText: "\uAD7F"
+  pointValue: {x: 0, y: 500}
