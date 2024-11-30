@@ -15,7 +15,7 @@ MonoBehaviour:
   character: 3
   spawnTime: 100
   maxPatience: 45
-  targetFloor: 1
+  targetFloor: 2
   talkText1: "\uD558\uD558 \uB098\uB294 \uC2E0\uCD9C\uADC0\uBAB0\uD55C \uAD34\uB3C4"
   talkText2: "\uC774 \uAC74\uBB3C\uC5D0\uC11C \uAC00\uC7A5 \uBE44\uC2FC \uBB3C\uAC74\uC744
     \uD6D4\uCCD0\uC57C\uC9C0"
