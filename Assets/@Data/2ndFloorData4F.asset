@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FloorData
   characterList:
   - {fileID: 11400000, guid: b35ff1de8290d864fa9d0bdfaaa1126d, type: 2}
-  - {fileID: 11400000, guid: 0bdc980c9f0ee9f418cdd8742bc2c202, type: 2}
   - {fileID: 11400000, guid: 8ebddc7dc8aac4c4384142f6508eeffb, type: 2}
