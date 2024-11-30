@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "StageData", menuName = "Scriptable Objects/StageData")]
 public class StageData : ScriptableObject
 {
-    public FloorData[] floorData;
+    public FloorData[] floorDatas;
 }
 
 [CreateAssetMenu(fileName = "FloorData", menuName = "Scriptable Objects/FloorData")]
