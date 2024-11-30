@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 2-5,2,0_1
+  m_Name: 2-15,2,0_1
   m_EditorClassIdentifier: 
   character: 0
-  spawnTime: 5
+  spawnTime: 15
   maxPatience: 20
-  targetFloor: 2
+  targetFloor: 0
   talkText1: "\uC624 \uB9C8\uCE68 \uB531 \uC5D8\uB9AC\uBCA0\uC774\uD130\uAC00 \uC654\uB124"
   talkText2: "\uB85C\uBE44\uB85C \uAC00\uC8FC\uC138\uC694. \uC9C0\uAE08 \uCE5C\uAD6C\uAC00
     \uAE30\uB2E4\uB9AC\uACE0 \uC788\uC744\uAC70\uC5D0\uC694"
