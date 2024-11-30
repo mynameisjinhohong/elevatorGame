@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfe6fc645aa069043a12b7528ab4f779, type: 3}
-  m_Name: 40,0,3_2
+  m_Name: 160,0,4_Stranger2
   m_EditorClassIdentifier: 
-  character: 0
-  spawnTime: 40
+  character: 2
+  spawnTime: 160
   maxPatience: 100
-  targetFloor: 3
-  talkText1: "\uD559\uAD50\uC900\uBE44\uBB3C\uC744 \uC0AC\uB7EC\uC654\uC5B4\uC694."
-  talkText2: "\uC774 \uAC74\uBB3C\uC5D0 \uBCF4\uB77C\uBB38\uAD6C\uAC00 \uBA87\uCE35\uC778\uAC00\uC694?"
-  talkText3: "4\uCE35\uC5D0 \uBB38\uAD6C\uC810\uC774 \uC788\uC5B4\uC694."
-  angryText: "\u2026"
-  thankText: "\uAC10\uC0AC\uD569\uB2C8\uB2E4."
+  targetFloor: 4
+  talkText1: Hello, I want to go to a famous Korean brand cafe.
+  talkText2: I heard that it's a cafe run by a very famous businessman.
+  talkText3: What was the name... StarTeahouse?
+  angryText: Holy, How can it be so slow?
+  thankText: Thank you for your service
   requireEvent: []
-  pointValue: 100
+  pointValue: 150

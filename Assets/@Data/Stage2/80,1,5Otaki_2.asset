@@ -24,4 +24,6 @@ MonoBehaviour:
     \uC548\uB41C\uB2E4\uB2A5!!"
   angryText: "\uBCA8\uBCF4\uC774\uCFE4\uC5D0\uAC8C \uC2E4\uB9DD\uD587\uB2E4\uB2A5!!"
   thankText: "\uC0AC\uB791\uD55C\uB2E4\uB2A5~~ \uC5D8\uD504\uCA29!"
-  pointValue: {x: 150, y: 150}
+  requireEvent:
+  - {fileID: 11400000, guid: b37693368dfca784a954cf441ec7b5c9, type: 2}
+  pointValue: 150
