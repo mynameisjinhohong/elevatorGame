@@ -106,6 +106,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StartOpenElevator()
     {
+        audioManager.StartAudio(SFX.ElevatorOpen);
         uiManager.TurnOffElevatorButton();
         uiManager.OffFloorArrowButton(floor);
         elevator.OpenElevator();
@@ -114,6 +115,7 @@ public class GameManager : SerializedMonoBehaviour
 
     public void EndOpenElevator()
     {
+        audioManager.StopAudio(SFX.ElevatorOpen);
         gameState = GameState.OutCharacter;
     }
 
@@ -219,11 +221,13 @@ public class GameManager : SerializedMonoBehaviour
 
     public void StartCloseElevator()
     {
+        audioManager.StartAudio(SFX.ElevatorClose);
         elevator.CloseElevator();
     }
 
     public void EndCloseElevator()
     {
+        audioManager.StopAudio(SFX.ElevatorClose);
         uiManager.OffFloorArrowButton(floor);
         gameState = GameState.MoveFloor;
     }
@@ -231,6 +235,7 @@ public class GameManager : SerializedMonoBehaviour
     public void StartMoveFloor()
     {
         uiManager.TurnOnElevatorButton();
+        audioManager.StartAudio(SFX.ElevatorMove);
     }
 
     public void MoveFloor(int idx)
@@ -240,6 +245,7 @@ public class GameManager : SerializedMonoBehaviour
     }
     IEnumerator MoveFloorCo(int idx)
     {
+        audioManager.StartAudioLoop(SFX.ElevatorMove);
         while(idx != floor)
         {
             if (idx > floor)
@@ -255,6 +261,8 @@ public class GameManager : SerializedMonoBehaviour
                 uiManager.LampOn(floor);
             }
         }
+        audioManager.StopAudio(SFX.ElevatorMove);
+        audioManager.StartAudio(SFX.ElevatorArrive);
         gameState = GameState.OpenElevator;
     }
 
@@ -273,6 +281,7 @@ public class GameManager : SerializedMonoBehaviour
                 if (nowStage[i].characterList.Peek().spawnTime < time)
                 {
                     uiManager.OnFloorArrowButton(i);
+                    audioManager.StartAudio(SFX.ElevatorCall);
                 }
             }
         }
