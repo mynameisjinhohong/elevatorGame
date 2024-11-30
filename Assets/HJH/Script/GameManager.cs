@@ -11,7 +11,7 @@ public class GameManager : SerializedMonoBehaviour
     public UIManager uiManager;
     public AudioManager audioManager;
     #region 스테이지 관련
-    public StageData[] stageDatas;
+    public StageData[] stages;
     public int stage = 0;
     public List<FloorDataCopy> nowStage;
     #endregion
@@ -109,13 +109,13 @@ public class GameManager : SerializedMonoBehaviour
         uiManager.LampOn(floor);
         uiManager.TurnOffElevatorButton();
         nowStage= new List<FloorDataCopy>();
-        for(int i = 0; i < stageDatas[stage].floorData.Length; i++)
+        for(int i = 0; i < stages[stage].floorDatas.Length; i++)
         {
             nowStage.Add(new FloorDataCopy());
             nowStage[i].characterList = new Queue<CharacterData>();
-            for (int j = 0; j < stageDatas[stage].floorData[i].characterList.Length; j++)
+            for (int j = 0; j < stages[stage].floorDatas[i].characterList.Length; j++)
             {
-                nowStage[i].characterList.Enqueue(stageDatas[stage].floorData[i].characterList[j]);
+                nowStage[i].characterList.Enqueue(stages[stage].floorDatas[i].characterList[j]);
             }
         }
         
@@ -350,7 +350,7 @@ public class GameManager : SerializedMonoBehaviour
     {
         runGame = false;
         stage += 1;
-        if(stage >= stageDatas.Length)
+        if(stage >= stages.Length)
         {
             //게임 클리어시 이벤트
             Time.timeScale = 1.0f;

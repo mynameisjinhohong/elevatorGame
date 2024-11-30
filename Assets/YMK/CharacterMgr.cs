@@ -19,7 +19,6 @@ public class CharacterMgr : SerializedMonoBehaviour
         {
             Instance = this;
             Instance.Init();
-            DontDestroyOnLoad(Instance);
         }    
         else
         {
