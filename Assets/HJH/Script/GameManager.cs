@@ -243,7 +243,19 @@ public class GameManager : SerializedMonoBehaviour
                 {
                     CharacterObj obj = CharacterMgr.CreateCharacterObj(nowStage[floor].characterList.Dequeue());
                     obj.transform.parent = characterParentFirst;
-                    obj.GetComponent<RectTransform>().anchoredPosition = new Vector3(100, obj.GetComponent<RectTransform>().anchoredPosition.y, 0);
+                    RectTransform rectTransform = obj.GetComponent<RectTransform>();
+                    if (rectTransform != null)
+                    {
+                        // 부모에 맞춰 Stretch로 설정
+                        rectTransform.anchorMin = new Vector2(0, 0);
+                        rectTransform.anchorMax = new Vector2(1, 1);
+                        // Pivot 설정 (기본값 유지)
+                        rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                        // Left, Top, Right, Bottom 값 설정
+                        rectTransform.offsetMin = new Vector2(0, 0); // Left, Bottom
+                        rectTransform.offsetMax = new Vector2(0, -100); // Right, Top (-값 주의)
+                        rectTransform.localScale = Vector3.one;
+                    }
                     obj.RunCharacterAction(CharacterAction.Spawn, () =>
                     {
                         RunTalkEvent(obj, 1);
