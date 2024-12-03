@@ -23,5 +23,7 @@ MonoBehaviour:
   talkText3: "PC\uBC14\uC544\uC544\uC544\uC544\uC544\uC544\uC544\uC544\uC544\uC559"
   angryText: "\uC5B4\uC6B0 \uB290\uB824. \uD2C0\uB531"
   thankText: "PC\uBC14\uC544~~~~~\uC559"
+  stageNum: 1
+  idx: 20
   requireEvent: []
   pointValue: 100

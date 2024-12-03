@@ -22,5 +22,7 @@ MonoBehaviour:
   talkText3: "\uD53C\uC790\uAC00 \uC601\uC5B4\uB85C \uBB54\uC9C0 \uBAB0\uB77C? Pizza\uB77C\uACE0!"
   angryText: "\uC544!! \uBC30\uACE0\uD508\uB370 \uC9C4\uC9DC\u2026"
   thankText: Nice!!
+  stageNum: 2
+  idx: 13
   requireEvent: []
   pointValue: 100

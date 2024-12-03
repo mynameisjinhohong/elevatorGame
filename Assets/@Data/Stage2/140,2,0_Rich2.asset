@@ -22,6 +22,8 @@ MonoBehaviour:
   talkText3: "\uC81C\uBC1C \uB098\uAC00\uAC8C\uD574\uC918\uC694!!"
   angryText: "\uD788\uC787!"
   thankText: "\uB3C4\uB9DD\uCCD0!!"
+  stageNum: 2
+  idx: 16
   requireEvent:
   - {fileID: 11400000, guid: 9dedebbc9a02e5a40901943269d7ab55, type: 2}
   pointValue: 150

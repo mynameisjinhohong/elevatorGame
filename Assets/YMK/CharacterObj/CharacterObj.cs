@@ -123,13 +123,13 @@ public class CharacterObj : MonoBehaviour
         switch(pTalkIdx)
         {
             case 1:
-                str = characterData.talkText1;
+                str = LanguageMgr.GetText(characterData.talkKey1);
                 break;
             case 2:
-                str = characterData.talkText2;
+                str = LanguageMgr.GetText(characterData.talkKey2);
                 break;
             case 3:
-                str = characterData.talkText3;
+                str = LanguageMgr.GetText(characterData.talkKey3);
                 break;
 
         }
@@ -147,7 +147,7 @@ public class CharacterObj : MonoBehaviour
     public void RunAngryTalkAction(NoParaDel pFun)
     {
         //캐릭터 화난대화 출력
-        string str = characterData.angryText;
+        string str = LanguageMgr.GetText(characterData.angryKey);
         SetAngry(true);
         talkBox.gameObject.SetActive(true);
 
@@ -161,7 +161,7 @@ public class CharacterObj : MonoBehaviour
     public void RunThankTalkAction(NoParaDel pFun)
     {
         //캐릭터 감사대화 출력
-        string str = characterData.thankText;
+        string str = LanguageMgr.GetText(characterData.thankKey);
         SetAngry(false);
         talkBox.gameObject.SetActive(true);
 

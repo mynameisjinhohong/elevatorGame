@@ -25,6 +25,8 @@ MonoBehaviour:
   angryText: "\uB10C \uB3C4\uB451\uC774\uC5C8\uC73C\uBA74 \uC9C4\uC791\uC5D0 \uC7A1\uD614\uC744\uAC70\uC57C"
   thankText: "\uBA38\uB9AC\uC2A4\uD0C0\uC77C\uC744 \uC880 \uBC14\uAFB8\uBA74 \uBCC0\uC7A5\uC774
     \uB418\uAC9F\uC9C0"
+  stageNum: 1
+  idx: 21
   requireEvent:
   - {fileID: 11400000, guid: 5357b4af3e3437a48ab1ad8ced1f5475, type: 2}
   pointValue: 150

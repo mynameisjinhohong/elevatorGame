@@ -250,11 +250,11 @@ public class GameManager : SerializedMonoBehaviour
                         rectTransform.anchorMin = new Vector2(0, 0);
                         rectTransform.anchorMax = new Vector2(1, 1);
                         // Pivot 설정 (기본값 유지)
-                        rectTransform.pivot = new Vector2(0.5f, 0.5f);
+                        rectTransform.pivot = new Vector2(0.5f, 0);
                         // Left, Top, Right, Bottom 값 설정
                         rectTransform.offsetMin = new Vector2(0, 0); // Left, Bottom
                         rectTransform.offsetMax = new Vector2(0, -100); // Right, Top (-값 주의)
-                        rectTransform.localScale = Vector3.one;
+                        rectTransform.localScale = Vector3.one*0.9f;
                     }
                     obj.RunCharacterAction(CharacterAction.Spawn, () =>
                     {

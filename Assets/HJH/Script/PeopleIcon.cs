@@ -41,13 +41,13 @@ public class PeopleIcon : MonoBehaviour
                 switch (lastChatIdx)
                 {
                     case 1:
-                        chatText.text = characterObj.characterData.talkText1;
+                        chatText.text = LanguageMgr.GetText(characterObj.characterData.talkKey1);
                         break;
                     case 2:
-                        chatText.text = characterObj.characterData.talkText2;
+                        chatText.text = LanguageMgr.GetText(characterObj.characterData.talkKey2);
                         break;
                     case 3:
-                        chatText.text = characterObj.characterData.talkText3;
+                        chatText.text = LanguageMgr.GetText(characterObj.characterData.talkKey3);
                         break;
                 }
                 chatButton.onClick.AddListener(() => uIManager.ChatCanvasOn(chatText.text));

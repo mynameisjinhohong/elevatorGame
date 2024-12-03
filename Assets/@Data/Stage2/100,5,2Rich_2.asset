@@ -24,6 +24,8 @@ MonoBehaviour:
     \uC788\uB354\uAD70\uC694."
   angryText: "\uC2E4\uB9DD\uC774 \uD07D\uB2C8\uB2E4\u2026"
   thankText: "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uBCA8\uBCF4\uC774\uC528."
+  stageNum: 2
+  idx: 12
   requireEvent:
   - {fileID: 11400000, guid: d0449e6337fee584ab6c7a4dbbc319ef, type: 2}
   pointValue: 150

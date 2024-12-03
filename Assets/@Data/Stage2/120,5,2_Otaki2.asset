@@ -23,6 +23,8 @@ MonoBehaviour:
   talkText3: "\uBCA8\uBCF4\uC774\uCFE4. \uD55C\uC2EC\uD558\uB2E4\uB2A5"
   angryText: "\uBCA8\uBCF4\uC774\uCFE4 \uC2E4\uB9DD\uD588\uB2E4\uB2A5!"
   thankText: "\uC5D8\uD504\uCA29 \uB0B4\uAC00 \uAC04\uB2E4\uB2A5~~!"
+  stageNum: 2
+  idx: 14
   requireEvent:
   - {fileID: 11400000, guid: ec47cbcd81a8ec541abe88240502d44a, type: 2}
   pointValue: 150

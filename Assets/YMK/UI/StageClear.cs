@@ -11,7 +11,8 @@ public class StageClear : MonoBehaviour
     {
         aniEndFun = pFun;
         int tipValue = GameManager.instance ? GameManager.instance.tip : 0;
-        string tipFormat = string.Format("¹ÞÀº ÆÁ : {0:N0}$", tipValue);
+        string strFormat = LanguageMgr.GetText("StageClear_2");
+        string tipFormat = string.Format(strFormat, tipValue);
         tipText.text = tipFormat;
         gameObject.SetActive(true);
         ani.Play();

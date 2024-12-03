@@ -24,5 +24,7 @@ MonoBehaviour:
     \uC6B0\uB9AC\uC9D1\uC774 \uC788\uC73C\uBA74 \uCC38 \uC88B\uACA0\uC9C0\uB9CC\u2026"
   angryText: "\uC5B4\uC6B0 \uB290\uB824"
   thankText: "\uC9D1\uC73C\uB85C \uAC00\uC790~"
+  stageNum: 1
+  idx: 27
   requireEvent: []
   pointValue: 100

@@ -21,5 +21,7 @@ MonoBehaviour:
   talkText3: "\uBE68\uB9AC!!!!!!!!!!!!!!"
   angryText: "\uB290\uB824!!!!!!!!"
   thankText: "\uBE68\uB77C!!!!"
+  stageNum: 1
+  idx: 9
   requireEvent: []
   pointValue: 200

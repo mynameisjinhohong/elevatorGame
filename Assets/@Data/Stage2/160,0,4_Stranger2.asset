@@ -21,5 +21,7 @@ MonoBehaviour:
   talkText3: What was the name... StarTeahouse?
   angryText: Holy, How can it be so slow?
   thankText: Thank you for your service
+  stageNum: 2
+  idx: 17
   requireEvent: []
   pointValue: 150

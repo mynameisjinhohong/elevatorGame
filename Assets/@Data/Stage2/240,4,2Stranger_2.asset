@@ -21,6 +21,8 @@ MonoBehaviour:
   talkText3: The information I know ends here.
   angryText: You're a really dim-witted friend.
   thankText: Thank you.
+  stageNum: 2
+  idx: 25
   requireEvent:
   - {fileID: 11400000, guid: d489abb29b00196478ec9e0a267ffcfe, type: 2}
   pointValue: 150

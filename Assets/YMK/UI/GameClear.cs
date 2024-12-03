@@ -11,7 +11,8 @@ public class GameClear : MonoBehaviour
     {
         gameObject.SetActive(true);
         int tipValue = GameManager.instance ? GameManager.instance.tip : 0;
-        string tipFormat = string.Format("당신이 모은 팁 : {0:N0}$", tipValue);
+        string strFormat = LanguageMgr.GetText("GameClear_1");
+        string tipFormat = string.Format(strFormat, tipValue);
         tipText.text = tipFormat;
         ani.Play();
     }

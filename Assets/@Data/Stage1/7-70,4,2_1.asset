@@ -23,5 +23,7 @@ MonoBehaviour:
   angryText: "\uAD49\uC7A5\uD788 \uC624\uB798\uAC78\uB9AC\uB124\uC694.."
   thankText: "\uC5EC\uAE30\uC5D0\uB294 \uC81C\uB300\uB85C\uB41C \uB0A8\uC131\uBCF5\uC774
     \uC788\uACA0\uC9C0\u2026"
+  stageNum: 1
+  idx: 7
   requireEvent: []
   pointValue: 100

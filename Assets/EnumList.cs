@@ -46,3 +46,11 @@ public enum SFX
     goodChat2,
     goodChat3,
 }
+
+public enum Language
+{
+    NONE = -1,
+    Korea = 0,
+    English = 1,
+    MAX
+}

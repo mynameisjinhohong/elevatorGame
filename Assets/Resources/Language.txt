@@ -1,0 +1,306 @@
+Key	Korea	English
+2F_1	- 복은영미용실	- Hair Salon
+2F_2	- 청룡 오락실	- Blue Dragon Arcade
+2F_3	- 클린 101	- Clean 101 Laundromat
+2F_4	- 해리스 바	- Harris Bar
+2F_5	- 해장국마을	- Haejang Soup Village
+2F_6	- 천다방	- Cheon Dabang
+3F_1	- 사이버21	- Cyber 21
+3F_2	- jewel&jam	- jewel&jam
+3F_3	- 컴퓨터존	- Computer Zone
+3F_4	- 카페헤븐	- Cafe Heaven
+3F_5	- 지오남성복	- Gio Men's Fashion
+3F_6	- 셔넬	- Shernel
+4F_1	- 할리모터스	- Harley Motors
+4F_2	- 철가방	- Chinese Restaurant
+4F_3	- 보라문구	- Bora Stationery
+4F_4	- 폰싸다	- Cheap Phones
+4F_5	- 헬지전자	- Helji Electronics
+4F_6	- 네일헤븐	- Nail Heaven
+5F_1	- 유니글로	- UniGlow
+5F_2	- 김밥지옥	- Gimbap Hell
+5F_3	- ★다방	- ★Dabang
+5F_4	- 바이커맥주	- Biker Beer
+5F_5	- PizzaHot	- PizzaHot
+5F_6	- 자동차공업소	- Auto Repair Shop
+Stage_1_1_1	반가워요, 벨보이 아저씨.컴퓨터를 맞추려 하는데 어디로 가면 될까요?	Nice to meet you, bellboy. I'm trying to set up a computer. Where should I go?
+Stage_1_1_2	만약에 찾기 힘드시면 지도를 보고 알려주세요	If it's hard to find, please check the map and let me know.
+Stage_1_1_3	엘리베이터 버튼 밑에 지도가 있을거에요	There should be a map under the elevator buttons.
+Stage_1_1_A	<참을성 길게해서 사실상 말할일 없게>	<참을성 길게해서 사실상 말할일 없게>
+Stage_1_1_T	고마워요 아저씨~	Thank you, Mr. Bellboy~
+Stage_1_2_1	오 마침 딱 엘리베이터가 왔네	Oh, just in time, the elevator has arrived!
+Stage_1_2_2	로비로 가주세요. 지금 친구가 기다리고 있을거에요	Please take me to the lobby. My friend should be waiting there now.
+Stage_1_2_3	저기 층수위에 친구가 기다린다고 표시되고 있어요.	Over there, it shows that my friend is waiting on that floor.
+Stage_1_2_A	에휴 이러다 친구가 갈뻔 했잖아요.	Phew, I almost let my friend go instead!
+Stage_1_2_T	오랜만이야~ 뭐먹으러 갈까? 아 수고했어요 아저씨	Long time no see! What should we eat? Oh, good job, Mr. Bellboy!
+Stage_1_3_1	뭘 로비까지 내려왔어, 중식이나 때리러 가자	Why are you down in the lobby? Let's go grab some Chinese food!
+Stage_1_3_2	뭘봐요, 빨리 중국집으로 가요	What are you looking at? Hurry, let's go to the Chinese restaurant!
+Stage_1_3_3	아, 이 아저씨 답답하네	Oh, you're so frustrating, Mr. Bellboy!
+Stage_1_3_A	와 답답해 미치겠다	Ugh, this is so frustrating, I’m going crazy!
+Stage_1_3_T	오늘 중국집 다죽었다 ㅋㅋ	Today, the Chinese restaurant is completely doomed, haha!
+Stage_1_4_1	내가 다시는 이 미용실 오나봐라	I don't think I'll ever come to this salon again!
+Stage_1_4_2	이 건물에 조금이라도 머무르기 싫으니까 빨리 갑시다	I don't want to stay in this building for even a second longer, so let's go quickly!
+Stage_1_4_3	로비로 가자고요 로비!	Let's go to the lobby! The lobby!
+Stage_1_4_A	아오 오늘 재수 옴붙었네	Ugh, I must be really unlucky today.
+Stage_1_4_T	에휴 벨보이는 쓸만한데, 저 미용실은 진짜	Sigh, the bellboy is useful, but that salon is really something else.
+Stage_1_5_1	아 배부르게 잘먹었다. 이제 좀 놀러 가볼까?	Ah, I ate so well. Should we go have some fun now?
+Stage_1_5_2	PC방은 어제 갔으니까 오늘은 다른곳!	We went to the PC café yesterday, so let's go somewhere else today!
+Stage_1_5_3	오락실 가자구요 아저씨	Let's go to the arcade, Mr. Bellboy!
+Stage_1_5_A	게임 한판하기 더럽게 힘드네	It's ridiculously hard just to play one game.
+Stage_1_5_T	굿굿 고마워용	Good, good! Thank you~!
+Stage_1_6_1	그거 아시나요, 여기 건물에 굉장히 유명한 아티스트가 있다네요	Did you know? There's a very famous artist in this building!
+Stage_1_6_2	생활의 달인에도 나왔다 하더라구요	I heard they were even featured on Master of Living.
+Stage_1_6_3	보석가공의 달인인가? 뭐 그런걸로 나왔다는데	Something like a master of jewelry crafting? That's what they were featured for, I heard.
+Stage_1_6_A	더 빨리 올수는 없었나요?	Couldn't you have arrived any faster?
+Stage_1_6_T	후후 보석아 기다려라 내가 간다	Hehe, wait for me, precious jewel! I'm on my way!
+Stage_1_7_1	아니 아저씨, 왜 여기 유니클로에는 남성복이 없어요?	Hey, mister, why doesn’t this Uniqlo have any men's clothing?
+Stage_1_7_2	남성복 사러 나온건데…	I came out to buy men's clothes...
+Stage_1_7_3	남성복 점에 대려다 줘요	Please take me to the men's clothing store.
+Stage_1_7_A	굉장히 오래걸리네요..	This is taking quite a long time...
+Stage_1_7_T	여기에는 제대로된 남성복이 있겠지…	There has to be proper men's clothing here, right...
+Stage_1_8_1	세상에서 가장 나쁜 피자는?	The worst pizza in the world?
+Stage_1_8_2	병역기피자	Draft Dodger Pizza
+Stage_1_8_3	하하 재미있죠? 피자나 먹게 피자집으로 가줘요	Haha, it's funny, right? Let's go to a pizza place and get some pizza!
+Stage_1_8_A	느려…	So slow...
+Stage_1_8_T	세상에서 가장 힘이 나는 피자는? 어깨 쫙피자ㅋㅋ	Haha, the most energizing pizza in the world? The Shoulder Straight Pizza
+Stage_1_9_1	술!!!	Alcohol!!!
+Stage_1_9_2	맥주!!!!!!	Beer!!!!!!
+Stage_1_9_3	빨리!!!!!!!!!!!!!!	Hurry!!!!!!!!!!!!
+Stage_1_9_A	느려!!!!!!!!	So slow!!!!!!!!
+Stage_1_9_T	빨라!!!!	Faster!!!!
+Stage_1_10_1	Hello, I want to go to a famous Korean brand cafe.	안녕하세요, 한국에서 유명한 브랜드 카페로 가고 싶어요.
+Stage_1_10_2	I heard that it's a cafe run by a very famous businessman.	제가 듣기론 이 카페는 매우 유명한 사업가가 운영하는 걸로 알고있어요.
+Stage_1_10_3	What was the name... StarTeahouse?	음.. 이름이.. StarTeahouse?
+Stage_1_10_A	Holy, How can it be so slow?	오우!! 어떻게 이렇게 느릴수 있죠?
+Stage_1_10_T	Thank you for your service	서비스 감사합니다.
+Stage_1_11_1	새로운 핸드폰을 맞췄어여	Got a new phone!
+Stage_1_11_2	이제 PC방을 갈래요	Now, let's go to the PC café!
+Stage_1_11_3	PC방에 데려다줘요	Please take me to the PC café!
+Stage_1_11_A	짱 느리네요	So slow...
+Stage_1_11_T	짱 빠르네요	Super fast!
+Stage_1_12_1	하하 나는 신출귀몰한 괴도	Haha, I am the elusive master thief!
+Stage_1_12_2	이 건물에서 가장 비싼 물건을 훔쳐야지	I’m going to steal the most expensive item in this building!
+Stage_1_12_3	이 건물 안에서 뭐가 제일 비싸려나	I wonder what the most expensive thing in this building is?
+Stage_1_12_A	비싼 물건 찾기가 이렇게 오래 걸린다고?!?	Is it really taking this long to find the expensive item?!?
+Stage_1_12_T	역시 뭐니뭐니해도 보석만한게 없지	After all, nothing beats jewelry!
+Stage_1_13_1	내 꿈의 오토바이인 할리데이비슨을 구매했어.	I bought my dream motorcycle, a Harley-Davidson!
+Stage_1_13_2	이제 밖으로 나가서 나의 폭주를 즐길 시간이야	Now it's time to head out and enjoy my wild ride!
+Stage_1_13_3	로비로 보내줘	Please take me to the lobby
+Stage_1_13_A	내 폭주가 늦어지고 있어…	My wild ride is getting delayed...
+Stage_1_13_T	세상아 내가 간다!!!	World, here I come!!!
+Stage_1_14_1	여기 김밥은 진짜 지옥같은 맛이나네.	The gimbap here really tastes like hell.
+Stage_1_14_2	이름이 지옥김밥이라서 그런가?	Is it because the name is 'Hell Gimbap'?
+Stage_1_14_3	그러면 천국이 이름에 들어간 곳은 좀 더 맛있겠지?	Then, a place with 'Heaven' in its name must taste better, right?
+Stage_1_14_A	이 엘리베이터도 지옥이네	This elevator is like hell, too.
+Stage_1_14_T	과연 천국의 맛일지 보자고	Let's see if it really tastes like heaven.
+Stage_1_15_1	어제 술을 너무 많이 마셨어요…. 속이 안좋아…	I drank way too much yesterday... I feel terrible...
+Stage_1_15_2	술을 마시고 나서 다음날에는 어디에 가는게 좋을까요..?	Where is a good place to go the day after drinking?
+Stage_1_15_3	해장국집에 가면 좋지 않을까요…?	Wouldn't it be good to go to a hangover soup place?
+Stage_1_15_A	너무 울렁거려… 우웩…	I feel so nauseous... Ugh...
+Stage_1_15_T	빨리 해장을 해야겠어…	I need to cure this hangover quickly...
+Stage_1_16_1	오늘은 뭔가 술이 마시고 싶은 날이네요	Today feels like a day when I want to drink.
+Stage_1_16_2	약간 분위기 있는 곳에서 낭만적으로 홀짝이고 싶은 걸요?	I feel like having a drink in a classy, romantic place, sipping slowly.
+Stage_1_16_3	이 건물에는 바 같은 곳은 없을까요?	Is there a bar or something like that in this building?
+Stage_1_16_A	정말 느리네요.	This is really slow.
+Stage_1_16_T	와인을 마셔볼까나~	Maybe I should try some wine~
+Stage_1_17_1	전 작가에요. 보통 카페에서 글을 쓰죠.	I'm a writer. I usually write at cafés.
+Stage_1_17_2	전망 좋은 카페에 가야 글이 잘써져요.	I write better when I go to a café with a nice view.
+Stage_1_17_3	사람들을 내려다보면서 영감을 얻거든요	I get inspired by looking down at people.
+Stage_1_17_A	어쩜 이렇게 느릴수가 있을까요? 이것대로 놀랍네요	How can this be so slow? It's truly amazing.
+Stage_1_17_T	영감이 떠올랐어요! 당신을 소재로 소설을 써봐도 될까요?	I just got an idea! Can I write a novel based on you as the subject?
+Stage_1_18_1	I was very satisfied with the Korean cafe. time passed so quickly that it was already meal time.	한국의 카페에 매우 만족했어요, 시간이 참 빠르네요 벌써 밥먹을 시간이네요.
+Stage_1_18_2	I want to try some unique Korean food.	한국의 유니크한 음식을 먹고싶어요.
+Stage_1_18_3	I heard that Korean haejangguk is very famous. Let's go there.	제가 듣기로는 한국의 해장국은 매우 유명하다고하네요. 거기로 가죠
+Stage_1_18_A	Holy! How can it be so slow?	오우!! 어떻게 이렇게 느릴수 있죠?
+Stage_1_18_T	Thank you for your service	서비스 감사합니다.
+Stage_1_19_1	빨래방으로 가주세요	Please take me to the laundromat.
+Stage_1_19_2	빨래방 어딨는지 모르나요?	Do you not know where the laundromat is?
+Stage_1_19_3	제가 알기로는 2층에 있네요	As far as I know. it's on the second floor.
+Stage_1_19_A	이렇게 오래 걸릴 일이었나요?	Was this supposed to take this long?
+Stage_1_19_T	우리 집 세탁기가 고장나서요. 감사합니다.	My washing machine at home is broken, thank you.
+Stage_1_20_1	친구들이 PC방에서 기다린다고 했어요	My friends said they're waiting at the PC café.
+Stage_1_20_2	PC방 빨리 가주세요 현기증 난단 말이에요	Please take me to the PC café quickly, I'm feeling dizzy!
+Stage_1_20_3	PC바아아아아아아아아아앙	PC Caaaaaaaaaafé!
+Stage_1_20_A	어우 느려. 틀딱	Ugh, so slow. Old-timer.
+Stage_1_20_T	PC바아~~~~~앙	PC Cafeeeee~~~!
+Stage_1_21_1	하하 나는 신출귀몰한 괴도. 오늘도 보석들 스틸 성공~!	Haha, I am the elusive master thief. Another successful jewel steal today~!
+Stage_1_21_2	지금 로비에 경찰이 깔렸다는 소식을 들었어	I heard that the lobby is filled with police right now.
+Stage_1_21_3	뭔가 인상을 좀 바꾸고 밖으로 나가야겠는데	I think I need to change my expression a bit and head outside.
+Stage_1_21_A	넌 도둑이었으면 진작에 잡혔을거야	If you were a thief, you would have been caught by now.
+Stage_1_21_T	머리스타일을 좀 바꾸면 변장이 되겟지	If I change my hairstyle a bit, I could disguise myself.
+Stage_1_22_1	아니 집에 볼펜이 싹다 망가진게 말이 된다고 생각해요?	Do you think it makes sense that all the pens at home are broken?
+Stage_1_22_2	일단 문구점에 가서 펜들을 좀 사야겠어요	I think I should go to the stationery store and buy some pens first.
+Stage_1_22_3	보라 문구로 가주세요	Please take me to Bora Stationery.
+Stage_1_22_A	느려요…	So slow...
+Stage_1_22_T	고마워요	Thank you!
+Stage_1_23_1	여기 미용실에 수상한 사람이 들어온것 같은데요?	I think a suspicious person just entered this salon.
+Stage_1_23_2	뭔가 옷도 시꺼멓고 지가 괴도라고 말하고 다니고..	He's wearing all black and going around saying he's a thief...
+Stage_1_23_3	경찰에 신고해야겠어요.. 로비로 가주세요..	I need to report it to the police... Please take me to the lobby.
+Stage_1_23_A	이미 도망갔겠구만…	They've probably already escaped...
+Stage_1_23_T	빨리 신고해야지	I should report it quickly.
+Stage_1_24_1	이제 드디어 퇴근이다….	Finally, it's time to clock out...
+Stage_1_24_2	저는 가난해서 이런 좋은 건물에 못살아요….	I'm too poor to live in such a nice building...
+Stage_1_24_3	로비로 내려다주세요….	Please take me down to the lobby...
+Stage_1_24_A	퇴근이 길어지고 있어…	My workday is dragging on...
+Stage_1_24_T	빨리 집으로 가야지~	I need to get home quickly~
+Stage_1_25_1	오늘따라 이상한 사람들이 엄청 많이 왔습니다.	There are a lot of strange people here today.
+Stage_1_25_2	빨리 퇴근하고 싶군요.	I want to finish work quickly.
+Stage_1_25_3	로비로 가주시면 됩니다.	Go to the lobby.
+Stage_1_25_A	퇴근을 늦추시는군요.	You're getting off work late.
+Stage_1_25_T	퇴근!	Go Home!
+Stage_1_26_1	오락실은 다 좋은데 너무 빨리 문을 닫아요.	Arcades are great, but they close too early.
+Stage_1_26_2	그래도 PC방은 24시간이니까 다행이죠.	Still, it's a relief that PC cafe are open 24 hours.
+Stage_1_26_3	PC 방으로 가주세영	Please go to the PC cafe.
+Stage_1_26_A	이 시간에 게임 한판 더했겠네	You must have played one more game at this time.
+Stage_1_26_T	히히 재밌겠다	Hehe, that sounds fun.
+Stage_1_27_1	이 세상에서 가장 좋은 곳으로 가죠	Let's go to the best place in the world.
+Stage_1_27_2	가장 좋은 곳이 어디겠어요, 아저씨.  감수성을 발휘해 보세요.	Where do you think the best place is, sir? Try to tap into your sensitivity.
+Stage_1_27_3	당연히 집이 가장 좋죠. 이 건물에 우리집이 있으면 참 좋겠지만…	Of course, home is the best. It would be great if our house were in this building...
+Stage_1_27_A	어우 느려	Ugh, it's slow.
+Stage_1_27_T	집으로 가자~	Let's go home~
+Stage_1_28_1	오늘 우리 가게에 도둑이 들었답니다.	Today, a thief broke into our shop.
+Stage_1_28_2	경찰에 신고를 해서 지금 샅샅이 뒤지고 있다고는 들었는데…	I heard that they reported it to the police, and they're currently searching everywhere...
+Stage_1_28_3	경찰관님이 조사 받으러 오라고 하셔서 로비로 가봐야 해요.	The police officer asked me to come for an investigation, so I have to go to the lobby.
+Stage_1_28_A	경찰관님이 기다리시겠네요	The police officer must be waiting.
+Stage_1_28_T	도둑을 빨리 잡아야 할탠데…	We need to catch the thief quickly...
+Stage_2_1_1	어제 술을 너무 많이 마쉰거같아요. 해장을 해야겠어요	I think I drank too much yesterday. I need to have something to cure this hangover.
+Stage_2_1_2	해장국파는 곳으로 이동해주세요!	Please head to a place that serves hangover soup!
+Stage_2_1_3	2층!!	Second floor!!
+Stage_2_1_A	눈치가 너무 없네요!	You’re so oblivious!
+Stage_2_1_T	해장국~~	Hangover soup~~!
+Stage_2_2_1	핸드폰이 고장났어요…	My phone is broken...
+Stage_2_2_2	핸드폰을 파는 가게로 이동해주세요!	Please head to the store that sells phones!
+Stage_2_2_3	4층에 핸드폰 가게가 있잖아요!!	There's a phone store on the 4th floor!!
+Stage_2_2_A	…	...
+Stage_2_2_T	감사합니다.	Thank you.
+Stage_2_3_1	저는 703호에 살아요.	I live in room 703.
+Stage_2_3_2	703호로 이동할게요!	I will move to room 703!
+Stage_2_3_3	7층이라고요!!	I said the 7th floor!!
+Stage_2_3_A	직원되게 멍청하네!!	The staff is so clueless!!
+Stage_2_3_T	빨리 도착했네요!	Arrived quickly!
+Stage_2_4_1	오늘 머리하는 날이예요	Today is the day I get my hair done.
+Stage_2_4_2	미용실을 가고 싶어요.	I want to go to the hair salon.
+Stage_2_4_3	미용실은 2층에 있습니다!	The hair salon is on the 2nd floor!
+Stage_2_4_A	하.. 미용실 예약시간에 늦었잖아!!	Ugh... I’m late for my hair salon appointment!!
+Stage_2_4_T	여기 팁이예요~!	Here’s a tip~!
+Stage_2_5_1	김밥에 라면은 국룰	Gimbap with ramen is the unspoken rule.
+Stage_2_5_2	김밥지옥이 어딨을까요?	Where might Gimbap Hell be?
+Stage_2_5_3	5층에 김밥집이 있던거 같은데?	I think there’s a kimbap shop on the 5th floor?
+Stage_2_5_A	이렇게 일하면서 돈을 받을 수 있을거 같아요?	Do you think I can get paid by working like this?
+Stage_2_5_T	으아 배고프다.. 빨리 먹어야지	Ugh, I'm so hungry... I need to eat quickly.
+Stage_2_6_1	벨보이쿤! 와타시는 오락실에 가고 싶다능!!	Bellboy-kun! I want to go to the arcadeU!!
+Stage_2_6_2	벨보이쿤.. 설마 오락실이 어딘지도 모르는건…	Bellboy-kun... Could it be that you don't even know where the arcade is...?
+Stage_2_6_3	2층에 오락실이 있다능!!	There’s an arcade on the 2nd floorU!!
+Stage_2_6_A	벨보이쿤에게 실망햇다능!!	I’m disappointed in Bellboy-kunU!!
+Stage_2_6_T	고맙다능!	ThankU!
+Stage_2_7_1	학교준비물을 사러왔어요.	I came to buy school supplies.
+Stage_2_7_2	이 건물에 보라문구가 몇층인가요?	On which floor is the Bora Stationery store in this building?
+Stage_2_7_3	4층에 문구점이 있어요.	There’s a stationery store on the 4th floor.
+Stage_2_7_A	...	...
+Stage_2_7_T	감사합니다.	You're welcome!
+Stage_2_8_1	집으로 이동해 주시기를 부탁드립니다.	Please move to my house.
+Stage_2_8_2	제 집은 여기서부터 다섯 층을 더 올라가시면 곧 나타날 것입니다.	My house will appear if you go up five more floors from here.
+Stage_2_8_3	1과 5를 더한 값은 무엇인지 궁금합니다만?	I’m curious about the sum of 1 and 5. What is it?
+Stage_2_8_A	이 정도 실망스러운 결과라니, 기대가 컸던 만큼 더욱 가슴이 아픕니다.	Such a disappointing result... The bigger my expectations were, the more my heart aches.
+Stage_2_8_T	이렇게 신경 써 주셔서 감사드립니다.	Thank you for paying such close attention.
+Stage_2_9_1	여기서 나가고싶어요	I want to leave here.
+Stage_2_9_2	출입구가 몇층에 있나요?	On which floor is the entrance?
+Stage_2_9_3	1	1
+Stage_2_9_A	바보	Fool.
+Stage_2_9_T	Happy	Happy
+Stage_2_10_1	벨보이쿤! 엘프의 냄새를 맏은거 같다능!!	Bellboy-kun! I think I smell the scent of an elfU!!
+Stage_2_10_2	벨보이쿤! 엘프쨩이 있는곳으로 이동하고 싶다능!!	Bellboy-kun! I want to go to where Elf-chan isU!!
+Stage_2_10_3	더 이상의 힌트를 바라는건 안된다능!!	No more hints, pleaseU!!
+Stage_2_10_A	벨보이쿤에게 실망햇다능!!	I'm disappointed in Bellboy-kunU!!
+Stage_2_10_T	사랑한다능~~ 엘프쨩!	I love you~~ Elf-chan!
+Stage_2_11_1	요즘 몸이 너무 안좋아서 운동을 열심히 해야해요.	I've been feeling really unwell lately, so I need to exercise diligently.
+Stage_2_11_2	어제 티비에서 봤는데 계단 오르기 운동이 그렇게 좋다네요.	I saw on TV yesterday that stair climbing exercise is really good.
+Stage_2_11_3	로비에서 우리집까지 올라올라고요. 빨리 내려가 주세요	I need to go from the lobby to my house. Please go down quickly.
+Stage_2_11_A	운동할 맘이 싹 사라지는 엘리베이터네요..	It's an elevator that completely kills any motivation to exercise...
+Stage_2_11_T	이제 다시 올라갔다가 내려와야지~	Now I have to go up again and then come back down~
+Stage_2_12_1	호오, 이제 명품을 들여올 때가 되었군요.	Hmm, it seems like it's time to bring in luxury goods now.
+Stage_2_12_2	저는 여러 명품 브랜드 중에서도 셔넬을 특히 애호합니다.	Among all the luxury brands, I especially love Chanel.
+Stage_2_12_3	3층에 샤넬을 취급하는 부티크가 있더군요.	There’s a boutique on the 3rd floor that carries Chanel.
+Stage_2_12_A	실망이 큽니다…	I am deeply disappointed...
+Stage_2_12_T	감사합니다. 벨보이씨.	Thank you, Bellboy.
+Stage_2_13_1	혹시 피자 좋아하시나요?	Do you like pizza?
+Stage_2_13_2	피자집이랑 같은층에 바이커맥주라는 가게가 있어요.	There’s a place called Biker Beer on the same floor as the pizza shop.
+Stage_2_13_3	피자가 영어로 뭔지 몰라? Pizza라고!	Don't you know what pizza is in English? It's "Pizza"!
+Stage_2_13_A	아!! 배고픈데 진짜…	Ah!! I'm really hungry...
+Stage_2_13_T	Nice!!	Nice!!
+Stage_2_14_1	벨보이쿤! 나의 엘프쨩이 이동한거 같다능!!	Bellboy-kun! It seems like my Elf-chan has movedU!!
+Stage_2_14_2	벨보이쿤! 엘프쨩은 명품을 좋아한다능~~!	Bellboy-kun! Elf-chan loves luxury goodsU~~!
+Stage_2_14_3	벨보이쿤. 한심하다능	Bellboy-kun, you're patheticU.
+Stage_2_14_A	벨보이쿤 실망했다능!	I'm disappointed in you, Bellboy-kunU!
+Stage_2_14_T	엘프쨩 내가 간다능~~!	Elf-chan, I’m comingU~~!
+Stage_2_15_1	학원갈 시간이예요.	It's time to go to the academy.
+Stage_2_15_2	참고로 이 건물에는 학원이 없어요.	By the way, there’s no academy in this building.
+Stage_2_15_3	학원을 갈려면 이 건물을 나가야하지 않을까요?	Shouldn’t I leave this building to go to the academy?
+Stage_2_15_A	멍청이	Fool.
+Stage_2_15_T	빨리가야겠다. 학원 늦겠어	I should hurry. I’m going to be late for the academy.
+Stage_2_16_1	이상한 변태가 저를 뒤쫓고 있어요. 서둘러 이곳을 벗어나야겠어요!	A strange pervert is chasing me. I need to hurry and get out of here!
+Stage_2_16_2	빨리요! 빨리!	Hurry! Hurry!
+Stage_2_16_3	제발 나가게해줘요!!	Please let me out!!
+Stage_2_16_A	히잇!	Hee!
+Stage_2_16_T	도망쳐!!	Run away!!
+Stage_2_17_1	Hello, I want to go to a famous Korean brand cafe.	안녕하세요, 한국에서 유명한 브랜드 카페로 가고 싶어요.
+Stage_2_17_2	I heard that it's a cafe run by a very famous businessman.	제가 듣기론 이 카페는 매우 유명한 사업가가 운영하는 걸로 알고있어요.
+Stage_2_17_3	What was the name... StarTeahouse?	음.. 이름이.. StarTeahouse?
+Stage_2_17_A	Holy, How can it be so slow?	오우!! 어떻게 이렇게 느릴수 있죠?
+Stage_2_17_T	Thank you for your service	서비스 감사합니다.
+Stage_2_18_1	벨보이쿤! 엘프쨩의 냄새가 사라졌다능 혹시 아는거 있냐능?	Bellboy-kun! Elf-chan's scent has disappeared. Do you know anything about itU?
+Stage_2_18_2	엘프쨩을 보고 싶다능	I want to see Elf-chanU.
+Stage_2_18_3	엘프쨩! 엘프쨩! 엘프쨩!	Elf-chan! Elf-chan! Elf-chan!
+Stage_2_18_A	벨보이쿤! 바로라능!	Bellboy-kun! Right awayU!
+Stage_2_18_T	엘프쨩 다시 내가 간다능~~!	Elf-chan, I’m coming for you againU~~!
+Stage_2_19_1	안녕하세요. 601호로 이동해주세요.	Hello. Please take me to room 601.
+Stage_2_19_2	601호는 6층	Room 601 is on the 6th floor.
+Stage_2_19_3	6층!!	6th floor!!
+Stage_2_19_A	당신 바보?	Are you stupid?
+Stage_2_19_T	나이스	Nice
+Stage_2_20_1	친구랑 약속이 있어요. 피시방을 가고싶어요.	I have plans with a friend. I want to go to the PC cafe.
+Stage_2_20_2	피시방이 어딨을까요?	Where is the PC bang?
+Stage_2_20_3	더 이상힌트는 안줄거랍니다~~!	I won’t give any more hints~~!
+Stage_2_20_A	약속시간에 늦었잖아!!	I’m late for the appointment!!
+Stage_2_20_T	롤 5인큐해야지~~	Time to play a 5-man queue in LoL~~!
+Stage_2_21_1	오늘 기분이 별로네요.	I'm not feeling great today.
+Stage_2_21_2	라면을 먹었는데..	I ate ramen, but...
+Stage_2_21_3	흰옷을 입고 먹었어요.. 힝..	I ate while wearing a white shirt... Sigh...
+Stage_2_21_A	느리네요?	It’s slow, isn’t it?
+Stage_2_21_T	고마워요.	Thank you.
+Stage_2_22_1	가장 높은곳으로 가고싶어요	I want to go to the highest place
+Stage_2_22_2	왜 높은 곳으로 가고싶은지는 비밀이예요	It's a secret why you want to go high
+Stage_2_22_3	높은 곳일 수록 바람이 많이 부는거같아요!	I think the higher the place, the more windy it is!
+Stage_2_22_A	에이구..	Oh, my..
+Stage_2_22_T	시원한 바람이 부는거같아요!	It feels like there's a cool breeze!
+Stage_2_23_1	하하 나는 신출귀몰한 괴도. 오늘도 보석들 등장!	Haha, I'm a mysterious thief. Gems appear again today!
+Stage_2_23_2	여기에 보석이 많은곳이 있다고 들었어!	I heard there's a place with a lot of jewelry here!
+Stage_2_23_3	보석을 챙겨갈 수 있으면 부자가 될거야!	If you can take your jewelry with you, you'll be rich!
+Stage_2_23_A	좀 모자라구나.. 불쌍해라..	You're not smart. You're pathetic
+Stage_2_23_T	너도 도적해볼레?	Do you want to steal, too?
+Stage_2_24_1	새 옷을 사고싶네요.	I'd like to buy some new clothes.
+Stage_2_24_2	옷을 사고 싶은데 어디로 가야되나요?	I want to buy clothes, where should I go?
+Stage_2_24_3	에휴 4층 지도좀 보세요..	Phew, look at the map on the 4th floor..
+Stage_2_24_A	느려요 느려	It's slow. It's slow
+Stage_2_24_T	고마워요 좋은 옷 살게요!	Thank you, I'll buy you some nice clothes!
+Stage_2_25_1	Do you happen to know where the thief lady went?	혹시 도둑녀가 간곳을 기억하나요?
+Stage_2_25_2	I heard the thief lady likes jewels.	도둑녀는 보석을 좋아한다고 들었어요
+Stage_2_25_3	The information I know ends here.	제가 아는 정보는 여기까지얘요.
+Stage_2_25_A	You're a really dim-witted friend.	정말 멍청한 친구네요
+Stage_2_25_T	Thank you.	고마워요
+Stage_2_26_1	야근해서 너무 피곤하네요..	I'm so tired because I worked overtime..
+Stage_2_26_2	집을 갈려면 어디로 가야될까요?	Where should I go to get home?
+Stage_2_26_3	퇴근하고 싶어요~~!	I want to go home~~!
+Stage_2_26_A	벨보이가 이렇게 일을 못해서 쓰나..	How can a bellboy use it because he's so bad at work..
+Stage_2_26_T	고마워요	Thank you.
+TalkBox_ReAsk	애?	Huh?
+TalkBox_No	타세요	Get in, please.
+ReStartGame	재시작	ReStart
+GameClear_0	당신은 인류역사상 최고의 벨보이로 기억되었습니다.	You were remembered as the best bellboy in human history.
+GameClear_1	당신이 모은 팁 : {0:N0}$	Tips you collected : {0:N0}$
+StageClear_0	업무 종료	End of work
+StageClear_1	업무 성과	business performance
+StageClear_2	받은 팁 : {0:N0}$	Tip received : {0:N0}$
+StageClear_3	다음날로	To the next day
+GameOver_0	당신은 모든 재산을 몰수 당하고 해고 당했습니다.	You confiscated all your property and were fired.
+GameOver_1	당신이 마지막으로 받은 팁 : {0:N0}$	Last tip you received : {0:N0}$

@@ -24,5 +24,7 @@ MonoBehaviour:
     \uAC78\uB9B0\uB2E4\uACE0?!?"
   thankText: "\uC5ED\uC2DC \uBB50\uB2C8\uBB50\uB2C8\uD574\uB3C4 \uBCF4\uC11D\uB9CC\uD55C\uAC8C
     \uC5C6\uC9C0"
+  stageNum: 1
+  idx: 12
   requireEvent: []
   pointValue: 150
